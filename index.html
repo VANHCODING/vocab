@@ -2103,6 +2103,10 @@
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+              <button class="btn-main-cta btn-primary-gradient" id="btn-load-oxford-3500" style="font-size: 0.95rem; min-height: 48px; box-shadow: var(--shadow-md);">
+                <span>🔥 Nạp toàn bộ 3,479 từ vựng Oxford B1-C1</span>
+              </button>
+
               <button class="btn-main-cta" id="btn-open-import-modal" style="background: var(--primary); color: #FFFFFF; font-size: 0.92rem; min-height: 44px;">
                 <span>📥 Nạp thêm từ vựng (Nhập JSON)</span>
               </button>
@@ -2258,6 +2262,9 @@
       </div>
     </div>
   </div>
+
+  <!-- External Oxford 3,479 Dataset (Optional local cache) -->
+  <script src="oxford-dataset.js"></script>
 
   <!-- ==========================================================================
        JAVASCRIPT ARCHITECTURE & LOGIC
@@ -3912,6 +3919,36 @@
 
       document.getElementById('btn-close-topic-modal').addEventListener('click', () => {
         document.getElementById('modal-topic-preview').classList.remove('active');
+      });
+
+      // 1-Click Load Oxford 3479 Dataset
+      document.getElementById('btn-load-oxford-3500').addEventListener('click', () => {
+        const loadData = (dataList) => {
+          let addedCount = 0;
+          dataList.forEach(item => {
+            if (!AppState.vocabList.some(w => w.word.toLowerCase() === item.word.toLowerCase())) {
+              AppState.vocabList.push(item);
+              addedCount++;
+            }
+          });
+          saveState();
+          renderSettingsView();
+          renderDashboard();
+          renderLibrary();
+          showToast(`🔥 Đã nạp thành công ${addedCount} từ vựng Oxford B1-C1!`);
+        };
+
+        if (window.OXFORD_FULL_DATASET && Array.isArray(window.OXFORD_FULL_DATASET)) {
+          loadData(window.OXFORD_FULL_DATASET);
+        } else {
+          fetch('oxford-3000-5000-cefr-vietnamese.json')
+            .then(res => res.json())
+            .then(data => loadData(data))
+            .catch(() => {
+              showToast('Mở mục "Nhập JSON" và chọn file oxford-3000-5000-cefr-vietnamese.json để nạp!');
+              document.getElementById('modal-import-vocab').classList.add('active');
+            });
+        }
       });
 
       // 1-Click Load Extended Pack
