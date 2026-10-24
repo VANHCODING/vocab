@@ -388,13 +388,45 @@
       background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(13, 148, 136, 0.12));
       border: 1px solid var(--accent-blue);
       border-radius: var(--radius-lg);
-      padding: 16px 20px;
+      padding: 18px 22px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 20px;
       margin-bottom: 22px;
       box-shadow: var(--shadow-sm);
+    }
+
+    .placement-banner-info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .placement-banner-text {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .placement-banner-btn {
+      width: auto !important;
+      white-space: nowrap !important;
+      flex-shrink: 0 !important;
+      padding: 0 24px !important;
+      min-height: 42px !important;
+    }
+
+    @media (max-width: 640px) {
+      .placement-banner-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+      }
+      .placement-banner-btn {
+        width: 100% !important;
+      }
     }
 
     .placement-badge-icon {
@@ -1530,16 +1562,16 @@
 
           <!-- Placement Test Banner (For new or returning learners) -->
           <div class="placement-banner-card" id="placement-test-banner">
-            <div style="display: flex; align-items: center; gap: 14px;">
+            <div class="placement-banner-info">
               <div class="placement-badge-icon">🎯</div>
-              <div>
-                <div style="font-weight: 800; font-size: 1rem; color: var(--text-main);">Kiểm tra trình độ đầu vào (2 phút)</div>
-                <div style="font-size: 0.84rem; color: var(--text-muted);" id="placement-status-text">
+              <div class="placement-banner-text">
+                <div style="font-weight: 800; font-size: 1.05rem; color: var(--text-main); margin-bottom: 3px;">Kiểm tra trình độ đầu vào (2 phút)</div>
+                <div style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.45;" id="placement-status-text">
                   Chưa xác định trình độ • 10 câu hỏi nhanh giúp gợi ý cấp độ B1, B2 hay C1 phù hợp với bạn.
                 </div>
               </div>
             </div>
-            <button class="btn-main-cta" id="btn-open-placement-test" style="background: var(--accent-blue); color: #FFFFFF; font-size: 0.86rem; min-height: 40px; padding: 0 16px; flex-shrink: 0;">
+            <button class="btn-main-cta placement-banner-btn" id="btn-open-placement-test" style="background: var(--accent-blue); color: #FFFFFF; font-size: 0.88rem;">
               Làm bài test ➔
             </button>
           </div>
@@ -1879,7 +1911,7 @@
                 <div style="font-weight: 700; font-size: 0.95rem;">Kiểm tra trình độ đầu vào</div>
                 <div style="font-size: 0.82rem; color: var(--text-sub);">Làm bài test 10 câu để xác định cấp độ gợi ý (B1, B2, C1)</div>
               </div>
-              <button class="btn-main-cta" id="btn-settings-placement-test" style="background: var(--accent-blue); color: #FFFFFF; font-size: 0.84rem; min-height: 38px; padding: 0 14px;">
+              <button class="btn-main-cta" id="btn-settings-placement-test" style="background: var(--accent-blue); color: #FFFFFF; font-size: 0.84rem; min-height: 38px; padding: 0 16px; width: auto !important; flex-shrink: 0 !important; white-space: nowrap !important;">
                 Làm bài test
               </button>
             </div>
