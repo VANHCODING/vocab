@@ -2,7 +2,11 @@
 <html lang="vi" data-theme="light" data-font="md">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="theme-color" content="#0D9488" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>LexiUp - Học Từ Vựng Tiếng Anh B1, B2, C1 Chuẩn CEFR</title>
   <meta name="description" content="Ứng dụng học từ vựng tiếng Anh tương tác chuẩn CEFR B1, B2, C1 theo phương pháp lặp lại ngắt quãng (SRS) dành cho người Việt.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -267,13 +271,51 @@
       padding-bottom: 80px;
     }
 
-    @media (min-width: 768px) {
+    /* Tablet / iPad Portrait (768px - 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
       .desktop-sidebar {
         display: flex;
+        width: 200px;
+        padding: 18px 10px;
+      }
+      .brand-logo {
+        padding: 4px 6px;
+        margin-bottom: 16px;
+      }
+      .brand-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+      }
+      .brand-title {
+        font-size: 1.15rem;
+      }
+      .nav-link {
+        padding: 9px 10px;
+        font-size: 0.86rem;
+        gap: 8px;
+      }
+      .main-wrapper {
+        margin-left: 200px;
+        padding-bottom: 30px;
+      }
+      .content-container {
+        padding: 22px 16px;
+      }
+    }
+
+    /* Desktop / iPad Pro Landscape (1025px+) */
+    @media (min-width: 1025px) {
+      .desktop-sidebar {
+        display: flex;
+        width: 240px;
       }
       .main-wrapper {
         margin-left: 240px;
         padding-bottom: 40px;
+      }
+      .content-container {
+        padding: 30px 24px;
       }
     }
 
@@ -359,6 +401,133 @@
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(4px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    
+    /* ==========================================================================
+       MOBILE OPTIMIZATIONS (Phones < 768px, iOS Safari, Safe Areas)
+       ========================================================================== */
+    @media (max-width: 767px) {
+      /* Safe area insets for notched iPhones & Dynamic Island */
+      .top-header-mobile {
+        padding-top: max(12px, env(safe-area-inset-top));
+        padding-left: max(16px, env(safe-area-inset-left));
+        padding-right: max(16px, env(safe-area-inset-right));
+      }
+
+      .mobile-nav-bar {
+        padding-bottom: max(6px, env(safe-area-inset-bottom));
+        height: calc(62px + env(safe-area-inset-bottom));
+      }
+
+      .main-wrapper {
+        padding-bottom: calc(84px + env(safe-area-inset-bottom));
+      }
+
+      .content-container {
+        padding: 16px max(14px, env(safe-area-inset-left));
+      }
+
+      /* Prevent iOS Safari from forceful auto-zoom on input focus */
+      input, select, textarea {
+        font-size: 16px !important;
+      }
+
+      /* Compact, balanced Gamification Strip on Phones */
+      .gamification-strip {
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .stat-pill {
+        padding: 10px 6px;
+        gap: 5px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .stat-pill-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+      }
+
+      .stat-pill-icon svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .stat-pill-value {
+        font-size: 1.05rem;
+        line-height: 1.2;
+      }
+
+      .stat-pill-label {
+        font-size: 0.68rem;
+        white-space: nowrap;
+      }
+
+      /* Scrollable CEFR Tabs on narrow screens */
+      .cefr-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .cefr-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .cefr-tab-btn {
+        white-space: nowrap;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        flex-shrink: 0;
+      }
+
+      /* Touch targets for quiz options */
+      .quiz-option-btn {
+        min-height: 48px;
+        padding: 10px 14px;
+        font-size: 0.92rem;
+      }
+
+      /* Adaptive Flashcard height on mobile screens */
+      .flip-card-container, .flip-card-inner {
+        min-height: 380px;
+      }
+
+      .card-face {
+        padding: 18px 16px;
+      }
+
+      .flashcard-word-title {
+        font-size: 1.85rem;
+      }
+
+      /* Modal Box padding on mobile */
+      .modal-box {
+        padding: 18px 14px;
+        max-height: 92vh;
+        width: 100%;
+        margin: 0;
+        gap: 12px;
+      }
+
+      #topic-preview-words-list {
+        max-height: 52vh !important;
+      }
+
+      /* Settings buttons wrap nicely */
+      .settings-row {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .btn-segmented-wrap {
+        flex-wrap: wrap;
+      }
     }
 
     /* ==========================================================================
@@ -496,7 +665,7 @@
       margin-bottom: 26px;
     }
 
-    @media (min-width: 640px) {
+    @media (min-width: 960px) {
       .cta-grid {
         grid-template-columns: 1.15fr 0.85fr;
       }
@@ -623,15 +792,9 @@
 
     .level-quick-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 14px;
       margin-bottom: 26px;
-    }
-
-    @media (min-width: 640px) {
-      .level-quick-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
     }
 
     .level-pill-card {
@@ -758,14 +921,8 @@
 
     .topic-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 16px;
-    }
-
-    @media (min-width: 640px) {
-      .topic-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
     }
 
     .topic-card {
@@ -1126,7 +1283,72 @@
       background: var(--primary-light);
     }
 
+    
+    /* Keyboard Shortcuts Badges */
+    .key-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1px 6px;
+      min-width: 22px;
+      height: 20px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.72rem;
+      font-weight: 800;
+      border-radius: 4px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-bottom: 2px solid var(--border-color);
+      color: var(--text-sub);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .key-badge-light {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1px 6px;
+      min-width: 20px;
+      height: 18px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.72rem;
+      font-weight: 800;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #FFFFFF;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
     .quiz-option-key {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 24px;
+      padding: 0 6px;
+      border-radius: 4px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-bottom: 2px solid var(--border-color);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+    }
+
+    .quiz-option-btn:hover .quiz-option-key {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* old .quiz-option-key replaced */
+    .quiz-option-key-old {
       width: 26px;
       height: 26px;
       border-radius: var(--radius-sm);
@@ -1763,6 +1985,14 @@
             <div id="session-stage-root">
               <!-- Rendered dynamically by Session Engine -->
             </div>
+
+            <!-- Session Bottom Keyboard Hints Bar -->
+            <div class="session-keyboard-hints" style="display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 14px; font-size: 0.78rem; color: var(--text-sub); flex-wrap: wrap;">
+              <span><kbd class="key-badge">1</kbd> - <kbd class="key-badge">4</kbd> Chọn đáp án</span>
+              <span><kbd class="key-badge">Space</kbd> Lật thẻ</span>
+              <span><kbd class="key-badge">Enter</kbd> Tiếp tục</span>
+              <span><kbd class="key-badge">R</kbd> Nghe phát âm</span>
+            </div>
           </div>
         </section>
 
@@ -2303,20 +2533,29 @@
     </div>
   </div>
 
-  <!-- Modal: Reset Confirmation -->
+  <!-- Modal: Reset Confirmation with Double Confirmation -->
   <div class="modal-overlay" id="modal-confirm-reset" role="dialog" aria-modal="true">
-    <div class="modal-box" style="max-width: 400px; text-align: center;">
+    <div class="modal-box" style="max-width: 420px; text-align: center;">
       <div style="font-size: 2.5rem; margin-bottom: 4px;">⚠️</div>
       <h2 class="modal-title" id="reset-confirm-title" style="margin-bottom: 6px;">Xác nhận đặt lại?</h2>
-      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 18px;" id="reset-confirm-desc">
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;" id="reset-confirm-desc">
         Hành động này sẽ xóa dữ liệu học tập.
       </p>
+
+      <!-- Double confirmation input container (Only shown for factory reset) -->
+      <div id="reset-type-confirm-container" style="display: none; margin-bottom: 16px; text-align: left; background: var(--bg-subtle); padding: 12px; border-radius: var(--radius-md); border: 1px dashed var(--border-color);">
+        <label for="reset-confirm-input" style="font-size: 0.8rem; font-weight: 700; color: var(--accent-rose); display: block; margin-bottom: 6px;">
+          Gõ chữ <strong style="letter-spacing: 1px;">XOA</strong> vào ô dưới để mở khóa nút xóa:
+        </label>
+        <input type="text" id="reset-confirm-input" class="search-input" style="width: 100%; text-align: center; font-weight: 800; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase;" placeholder="XOA" autocomplete="off">
+      </div>
+
       <div style="display: flex; gap: 10px;">
         <button class="btn-main-cta" id="btn-cancel-reset" style="background: var(--bg-subtle); color: var(--text-main); flex: 1;">
           Hủy bỏ
         </button>
         <button class="btn-main-cta" id="btn-execute-reset" style="background: var(--accent-rose); color: #FFFFFF; flex: 1;">
-          Đồng ý
+          Xác nhận
         </button>
       </div>
     </div>
@@ -2598,46 +2837,90 @@
       return audioCtx;
     }
 
+    let speechTimeoutId = null;
+
     const AudioManager = {
       speak(text, forcedAccent = null, forcedRate = null) {
-        if (!AppState.user.speechEnabled) return;
+        if (!text || !AppState.user.speechEnabled) return;
         const accent = forcedAccent || AppState.user.voiceAccent || 'us';
         const rate = forcedRate || AppState.user.speechRate || 1.0;
 
-        if ('speechSynthesis' in window) {
+        // Try Web Speech API with iOS Safari safeguards
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
           try {
-            window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = accent === 'uk' ? 'en-GB' : 'en-US';
+            if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+              window.speechSynthesis.cancel();
+            }
+
+            const utterance = new SpeechSynthesisUtterance(String(text));
+            utterance.lang = (accent === 'uk') ? 'en-GB' : 'en-US';
             utterance.rate = rate;
 
-            const voices = window.speechSynthesis.getVoices();
-            const targetVoice = voices.find(v => {
-              if (accent === 'uk') return v.lang.startsWith('en-GB') || v.name.includes('UK') || v.name.includes('British');
-              return v.lang.startsWith('en-US') || v.name.includes('US') || v.name.includes('United States');
-            });
+            let voices = [];
+            try {
+              voices = window.speechSynthesis.getVoices() || [];
+            } catch (err) {
+              voices = [];
+            }
 
-            if (targetVoice) utterance.voice = targetVoice;
-            utterance.onerror = () => this.fallbackAudio(text);
+            if (voices.length > 0) {
+              const targetVoice = voices.find(v => {
+                if (!v) return false;
+                if (accent === 'uk') {
+                  return (v.lang && v.lang.startsWith('en-GB')) || (v.name && (v.name.includes('UK') || v.name.includes('British')));
+                }
+                return (v.lang && v.lang.startsWith('en-US')) || (v.name && (v.name.includes('US') || v.name.includes('United States')));
+              });
+              if (targetVoice) utterance.voice = targetVoice;
+            }
+
+            let fallbackTriggered = false;
+            const triggerFallbackOnce = () => {
+              if (!fallbackTriggered) {
+                fallbackTriggered = true;
+                this.fallbackAudio(text);
+              }
+            };
+
+            utterance.onerror = (e) => {
+              console.warn('[AudioManager] Utterance error on iOS/Safari, falling back:', e);
+              triggerFallbackOnce();
+            };
+
+            // Watchdog: If Safari hangs without playing audio within 1.2s, fallback smoothly
+            if (speechTimeoutId) clearTimeout(speechTimeoutId);
+            speechTimeoutId = setTimeout(() => {
+              if (!window.speechSynthesis.speaking && !fallbackTriggered) {
+                triggerFallbackOnce();
+              }
+            }, 1200);
+
             window.speechSynthesis.speak(utterance);
             return;
           } catch (e) {
-            console.warn('[AudioManager] Speech error, falling back:', e);
+            console.warn('[AudioManager] Web Speech exception on iOS Safari:', e);
           }
         }
+
         this.fallbackAudio(text);
       },
 
       fallbackAudio(text) {
         try {
-          const firstWord = text.trim().split(' ')[0].toLowerCase().replace(/[^a-z]/g, '');
+          const firstWord = String(text).trim().split(' ')[0].toLowerCase().replace(/[^a-z]/g, '');
           if (!firstWord) return;
           const audio = new Audio(`https://api.dictionaryapi.dev/media/entries/en/${firstWord}-us.mp3`);
-          audio.play().catch(() => {
-            const audio2 = new Audio(`https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(firstWord)}&type=2`);
-            audio2.play().catch(() => {});
-          });
-        } catch (e) {}
+          const p = audio.play();
+          if (p && typeof p.catch === 'function') {
+            p.catch(() => {
+              const audio2 = new Audio(`https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(firstWord)}&type=2`);
+              const p2 = audio2.play();
+              if (p2 && typeof p2.catch === 'function') p2.catch(() => {});
+            });
+          }
+        } catch (e) {
+          console.warn('[AudioManager] Silent fallback catch:', e);
+        }
       },
 
       playCorrectSound() {
@@ -2911,7 +3194,7 @@
           <div class="options-grid">
             ${q.options.map((opt, i) => `
               <button class="quiz-option-btn" onclick="PlacementTestEngine.selectAnswer('${opt}')">
-                <span class="quiz-option-key">${i + 1}</span>
+                <span class="quiz-option-key" title="Phím tắt [${i + 1}]">[${i + 1}]</span>
                 <span style="flex: 1;">${opt}</span>
               </button>
             `).join('')}
@@ -3228,12 +3511,13 @@
                     </div>
                   </div>` : ''}
 
-                  <!-- Example Sentence with Audio -->
+                  <!-- Example Sentence with Audio (Hidden if empty) -->
+                  ${word.example ? `
                   <div class="linguistic-box" style="margin-top: 8px; background: var(--bg-subtle);">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
                       <div style="font-weight: 700; font-size: 0.9rem; color: var(--text-main);">
                         "${highlightTargetWord(word.example, word.word)}"
-                      </div>
+                      </div>` : ''}
                       <button class="flashcard-audio-btn" style="width: 32px; height: 32px; margin: 0; flex-shrink: 0;" onclick="event.stopPropagation(); AudioManager.speak('${word.example.replace(/'/g, "\'")}')" title="Phát âm câu ví dụ">
                         <svg class="svg-icon-speaker" style="width: 15px; height: 15px; display: inline-block; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
                       </button>
@@ -3252,8 +3536,7 @@
           </div>
 
           <button class="btn-main-cta btn-primary-gradient" id="btn-flashcard-continue" style="min-height: 50px;">
-            <span>Tôi đã hiểu từ này, bắt đầu bài tập</span>
-            <span>➔</span>
+            <span>Tôi đã hiểu từ này, bắt đầu bài tập</span> <kbd class="key-badge-light" style="margin: 0 4px;">[Enter]</kbd> <span>➔</span>
           </button>
         `;
 
@@ -3307,7 +3590,7 @@
             <div class="options-grid">
               ${options.map((opt, i) => `
                 <button class="quiz-option-btn" data-answer="${encodeURIComponent(opt)}" data-correct="${opt === word.meaningVi}">
-                  <span class="quiz-option-key">${i + 1}</span>
+                  <span class="quiz-option-key" title="Phím tắt [${i + 1}]">[${i + 1}]</span>
                   <span style="flex: 1;">${opt}</span>
                 </button>
               `).join('')}
@@ -3319,7 +3602,7 @@
                 <div style="font-size: 0.85rem;" id="feedback-hint"></div>
               </div>
               <button class="btn-main-cta btn-primary-gradient" id="btn-quiz-next" style="width: auto; min-height: 40px; padding: 0 18px;">
-                Tiếp tục ➔
+                <span>Tiếp tục</span> <kbd class="key-badge-light" style="margin: 0 4px;">[Enter]</kbd> <span>➔</span>
               </button>
             </div>
           </div>
@@ -3353,7 +3636,7 @@
             <div class="options-grid">
               ${options.map((opt, i) => `
                 <button class="quiz-option-btn" data-answer="${encodeURIComponent(opt)}" data-correct="${opt === word.word}">
-                  <span class="quiz-option-key">${i + 1}</span>
+                  <span class="quiz-option-key" title="Phím tắt [${i + 1}]">[${i + 1}]</span>
                   <span style="flex: 1; font-weight: 700;">${opt}</span>
                 </button>
               `).join('')}
@@ -3365,7 +3648,7 @@
                 <div style="font-size: 0.85rem;" id="feedback-hint"></div>
               </div>
               <button class="btn-main-cta btn-primary-gradient" id="btn-quiz-next" style="width: auto; min-height: 40px; padding: 0 18px;">
-                Tiếp tục ➔
+                <span>Tiếp tục</span> <kbd class="key-badge-light" style="margin: 0 4px;">[Enter]</kbd> <span>➔</span>
               </button>
             </div>
           </div>
@@ -3417,7 +3700,7 @@
             <div class="options-grid">
               ${options.map((opt, i) => `
                 <button class="quiz-option-btn" data-answer="${encodeURIComponent(opt)}" data-correct="${opt === word.word}">
-                  <span class="quiz-option-key">${i + 1}</span>
+                  <span class="quiz-option-key" title="Phím tắt [${i + 1}]">[${i + 1}]</span>
                   <span style="flex: 1; font-weight: 700;">${opt}</span>
                 </button>
               `).join('')}
@@ -3429,7 +3712,7 @@
                 <div style="font-size: 0.85rem;" id="feedback-hint"></div>
               </div>
               <button class="btn-main-cta btn-primary-gradient" id="btn-quiz-next" style="width: auto; min-height: 40px; padding: 0 18px;">
-                Tiếp tục ➔
+                <span>Tiếp tục</span> <kbd class="key-badge-light" style="margin: 0 4px;">[Enter]</kbd> <span>➔</span>
               </button>
             </div>
           </div>
@@ -3476,7 +3759,7 @@
                 <div style="font-size: 0.85rem;" id="feedback-hint"></div>
               </div>
               <button class="btn-main-cta btn-primary-gradient" id="btn-quiz-next" style="width: auto; min-height: 40px; padding: 0 18px;">
-                Tiếp tục ➔
+                <span>Tiếp tục</span> <kbd class="key-badge-light" style="margin: 0 4px;">[Enter]</kbd> <span>➔</span>
               </button>
             </div>
           </div>
@@ -3533,7 +3816,7 @@
                 <div style="font-size: 0.85rem;" id="feedback-hint"></div>
               </div>
               <button class="btn-main-cta btn-primary-gradient" id="btn-quiz-next" style="width: auto; min-height: 40px; padding: 0 18px;">
-                Tiếp tục ➔
+                <span>Tiếp tục</span> <kbd class="key-badge-light" style="margin: 0 4px;">[Enter]</kbd> <span>➔</span>
               </button>
             </div>
           </div>
@@ -3594,7 +3877,7 @@
                 <div style="font-size: 0.85rem;" id="feedback-hint"></div>
               </div>
               <button class="btn-main-cta btn-primary-gradient" id="btn-quiz-next" style="width: auto; min-height: 40px; padding: 0 18px;">
-                Tiếp tục ➔
+                <span>Tiếp tục</span> <kbd class="key-badge-light" style="margin: 0 4px;">[Enter]</kbd> <span>➔</span>
               </button>
             </div>
           </div>
@@ -4038,7 +4321,7 @@
                   <div style="flex: 1; min-width: 0;">
                     <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                       <strong style="font-size: 1.1rem; color: var(--text-main);">${w.word}</strong>
-                      <span style="font-size: 0.85rem; color: var(--primary); font-family: monospace;">${w.ipa}</span>
+                      ${w.ipa ? `<span style="font-size: 0.85rem; color: var(--primary); font-family: monospace;">${w.ipa}</span>` : ""}
                       <span style="font-size: 0.72rem; background: var(--bg-subtle); padding: 2px 6px; border-radius: 4px; color: var(--text-sub);">${w.pos}</span>
                       <span class="level-badge badge-${w.level.toLowerCase()}">Cấp ${w.level}</span>
                       <span style="font-size: 0.72rem; color: var(--text-sub); background: var(--bg-subtle); padding: 2px 8px; border-radius: 12px;">${w.topic}</span>
@@ -4190,7 +4473,7 @@
               <div style="flex: 1; min-width: 0;">
                 <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                   <strong style="font-size: 1.05rem; color: var(--text-main);">${w.word}</strong>
-                  <span style="font-size: 0.85rem; color: var(--primary); font-family: monospace;">${w.ipa}</span>
+                  ${w.ipa ? `<span style="font-size: 0.85rem; color: var(--primary); font-family: monospace;">${w.ipa}</span>` : ""}
                   <span style="font-size: 0.72rem; background: var(--bg-subtle); padding: 2px 6px; border-radius: 4px; color: var(--text-sub);">${w.pos}</span>
                   ${badgeHtml}
                 </div>
@@ -4483,36 +4766,50 @@
       if (formAddCustomWord) {
         formAddCustomWord.addEventListener('submit', (e) => {
           e.preventDefault();
-          const word = document.getElementById('custom-word-input').value.trim();
-          const ipa = document.getElementById('custom-ipa-input').value.trim() || '/--/';
-          const pos = document.getElementById('custom-pos-input').value;
-          const level = document.getElementById('custom-level-input').value;
-          const meaningVi = document.getElementById('custom-meaning-input').value.trim();
-          const example = document.getElementById('custom-example-input').value.trim() || `Example with ${word}.`;
+          const rawWord = document.getElementById('custom-word-input').value.trim();
+          const rawMeaning = document.getElementById('custom-meaning-input').value.trim();
+          let rawIpa = document.getElementById('custom-ipa-input').value.trim();
+          const pos = document.getElementById('custom-pos-input').value || 'noun';
+          let level = document.getElementById('custom-level-input').value;
+          const rawExample = document.getElementById('custom-example-input').value.trim();
           const rawColloc = document.getElementById('custom-colloc-input').value.trim();
-          const collocations = rawColloc ? rawColloc.split(',').map(s => s.trim()).filter(Boolean) : [];
 
-          if (!word || !meaningVi) {
+          // 1. Validation checks
+          if (!rawWord || !rawMeaning) {
             alert('Vui lòng nhập từ tiếng Anh và nghĩa tiếng Việt!');
             return;
           }
 
+          if (!['B1', 'B2', 'C1'].includes(level)) {
+            level = 'B1';
+          }
+
+          // Format IPA cleanly (wrap with /.../ if not already wrapped)
+          if (rawIpa) {
+            if (!rawIpa.startsWith('/')) rawIpa = '/' + rawIpa;
+            if (!rawIpa.endsWith('/')) rawIpa = rawIpa + '/';
+          } else {
+            rawIpa = ''; // Leave empty, avoid undefined or /--/
+          }
+
+          const collocations = rawColloc ? rawColloc.split(',').map(s => s.trim()).filter(Boolean) : [];
+
           const newWordObj = {
             id: 'custom-' + Date.now(),
-            word: word,
-            ipa: ipa,
+            word: rawWord,
+            ipa: rawIpa,
             pos: pos,
             level: level,
             topic: 'Từ vựng tự thêm',
-            meaningVi: meaningVi,
-            definitionEn: `Custom user-added word: ${word}`,
-            example: example,
+            meaningVi: rawMeaning,
+            definitionEn: `User custom word: ${rawWord}`,
+            example: rawExample,
             exampleVi: '',
-            context: '[Cá nhân]',
+            context: '[Tự thêm]',
             collocations: collocations,
             wordFamily: null,
-            ipa_uk: ipa,
-            ipa_us: ipa
+            ipa_uk: rawIpa,
+            ipa_us: rawIpa
           };
 
           // Save to localStorage
@@ -4575,6 +4872,10 @@
           document.querySelectorAll('.cefr-tab-btn').forEach(btn => {
             btn.classList.toggle('active', btn.dataset.cefrTab === currentCefrTab);
           });
+          // Auto-reset search query & input on jump to avoid empty page trap
+          if (searchInput) searchInput.value = '';
+          searchQuery = '';
+          if (searchClear) searchClear.style.display = 'none';
           switchView('library');
         });
       });
@@ -4602,6 +4903,10 @@
           document.querySelectorAll('.cefr-tab-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           currentCefrTab = btn.dataset.cefrTab;
+          // Auto-reset search query & input on tab switch to avoid empty page trap
+          if (searchInput) searchInput.value = '';
+          searchQuery = '';
+          if (searchClear) searchClear.style.display = 'none';
           renderLibrary();
         });
       });
@@ -4710,40 +5015,82 @@
         closeModal('modal-topic-preview');
       });
 
-      // Reset
+      // Reset with Double Confirmation for Factory Reset
       let resetMode = 'progress';
+      const resetConfirmContainer = document.getElementById('reset-type-confirm-container');
+      const resetConfirmInput = document.getElementById('reset-confirm-input');
+      const btnExecuteReset = document.getElementById('btn-execute-reset');
+
       document.getElementById('btn-reset-progress-modal').addEventListener('click', () => {
         resetMode = 'progress';
         document.getElementById('reset-confirm-title').textContent = 'Đặt lại tiến độ học?';
-        document.getElementById('reset-confirm-desc').textContent = 'Tất cả trạng thái từ vựng sẽ trở về "Mới" và chuỗi học tập sẽ đặt lại về 0.';
+        document.getElementById('reset-confirm-desc').textContent = 'Toàn bộ từ vựng sẽ trở về chưa học (Hộp 0) và chuỗi học tập sẽ đặt lại về 0. Danh sách từ vựng vẫn được giữ nguyên.';
+        if (resetConfirmContainer) resetConfirmContainer.style.display = 'none';
+        if (btnExecuteReset) {
+          btnExecuteReset.disabled = false;
+          btnExecuteReset.style.opacity = '1';
+          btnExecuteReset.style.cursor = 'pointer';
+        }
         openModal('modal-confirm-reset');
       });
 
       document.getElementById('btn-factory-reset').addEventListener('click', () => {
         resetMode = 'factory';
         document.getElementById('reset-confirm-title').textContent = '⚠️ Khôi phục cài đặt gốc?';
-        document.getElementById('reset-confirm-desc').textContent = 'Toàn bộ tiến độ và cài đặt sẽ bị xóa sạch, đưa ứng dụng về mặc định ban đầu.';
+        document.getElementById('reset-confirm-desc').textContent = 'Thao tác này KHÔNG THỂ hoàn tác! Toàn bộ tiến độ học, chuỗi ngày streak, XP và tất cả từ vựng tự thêm sẽ bị xóa vĩnh viễn.';
+        if (resetConfirmContainer) {
+          resetConfirmContainer.style.display = 'block';
+          if (resetConfirmInput) {
+            resetConfirmInput.value = '';
+            setTimeout(() => resetConfirmInput.focus(), 150);
+          }
+        }
+        if (btnExecuteReset) {
+          btnExecuteReset.disabled = true;
+          btnExecuteReset.style.opacity = '0.45';
+          btnExecuteReset.style.cursor = 'not-allowed';
+        }
         openModal('modal-confirm-reset');
       });
 
+      if (resetConfirmInput) {
+        resetConfirmInput.addEventListener('input', (e) => {
+          const val = e.target.value.trim().toUpperCase();
+          const isValid = (val === 'XOA' || val === 'RESET');
+          if (btnExecuteReset) {
+            btnExecuteReset.disabled = !isValid;
+            btnExecuteReset.style.opacity = isValid ? '1' : '0.45';
+            btnExecuteReset.style.cursor = isValid ? 'pointer' : 'not-allowed';
+          }
+        });
+      }
+
       document.getElementById('btn-cancel-reset').addEventListener('click', () => {
         closeModal('modal-confirm-reset');
+        if (resetConfirmInput) resetConfirmInput.value = '';
       });
 
       document.getElementById('btn-execute-reset').addEventListener('click', () => {
-        closeModal('modal-confirm-reset');
-        if (resetMode === 'progress') {
-          AppState.wordProgress = {};
-          AppState.user.streak = 0;
-          AppState.user.todayLearnedCount = 0;
-          saveState();
-          renderDashboard();
-          renderProgressView();
-          showToast('🔄 Đã đặt lại toàn bộ tiến độ học!');
-        } else {
+        if (resetMode === 'factory') {
+          const val = resetConfirmInput ? resetConfirmInput.value.trim().toUpperCase() : '';
+          if (val !== 'XOA' && val !== 'RESET') {
+            alert('Vui lòng gõ chữ XOA để xác nhận xóa toàn bộ dữ liệu!');
+            return;
+          }
+          closeModal('modal-confirm-reset');
           StorageManager.clear();
           location.reload();
+          return;
         }
+
+        closeModal('modal-confirm-reset');
+        AppState.wordProgress = {};
+        AppState.user.streak = 0;
+        AppState.user.todayLearnedCount = 0;
+        saveState();
+        renderDashboard();
+        renderProgressView();
+        showToast('🔄 Đã đặt lại toàn bộ tiến độ học!');
       });
 
       // Keyboard Accessibility
