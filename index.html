@@ -113,6 +113,10 @@
       -webkit-tap-highlight-color: transparent;
     }
 
+    button, a, input, select, textarea, .quiz-option-btn, .topic-card, .flip-card-inner, .mobile-nav-item, .stat-pill {
+      touch-action: manipulation;
+    }
+
     html {
       font-size: var(--font-scale);
       scroll-behavior: smooth;
@@ -408,6 +412,32 @@
        MOBILE OPTIMIZATIONS (Phones < 768px, iOS Safari, Safe Areas)
        ========================================================================== */
     @media (max-width: 767px) {
+      /* High-performance mobile scroll & animations (No GPU lag / stutter) */
+      .modal-overlay {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: rgba(15, 23, 42, 0.75) !important;
+      }
+
+      .mobile-nav-bar, .top-header-mobile {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: var(--bg-card) !important;
+      }
+
+      .main-wrapper, .modal-box, #topic-preview-words-list, .content-container, .card-face {
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .topic-card, .quiz-stage-container, .modal-box {
+        contain: content;
+      }
+
+      .flip-card-inner {
+        will-change: transform;
+        transform: translateZ(0);
+      }
+
       /* Safe area insets for notched iPhones & Dynamic Island */
       .top-header-mobile {
         padding-top: max(12px, env(safe-area-inset-top));
@@ -1163,6 +1193,8 @@
       height: 100%;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
       border-radius: var(--radius-xl);
       padding: 24px 22px;
       display: flex;
@@ -2904,33 +2936,87 @@
     }
 
     let speechTimeoutId = null;
+    let currentActiveAudio = null;
+    let currentActiveUtterance = null;
+    let cachedSpeechVoices = null;
 
     const AudioManager = {
-      speak(text, forcedAccent = null, forcedRate = null) {
-        if (!text || !AppState.user.speechEnabled) return;
-        const accent = forcedAccent || AppState.user.voiceAccent || 'us';
-        const rate = forcedRate || AppState.user.speechRate || 1.0;
+      init() {
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          const loadVoices = () => {
+            try {
+              const v = window.speechSynthesis.getVoices();
+              if (v && v.length > 0) cachedSpeechVoices = v;
+            } catch (e) {}
+          };
+          loadVoices();
+          if (window.speechSynthesis.onvoiceschanged !== undefined) {
+            window.speechSynthesis.onvoiceschanged = loadVoices;
+          }
+        }
+      },
 
-        // Try Web Speech API with iOS Safari safeguards
+      stop() {
+        // 1. Cancel pending speech watchdog
+        if (speechTimeoutId) {
+          clearTimeout(speechTimeoutId);
+          speechTimeoutId = null;
+        }
+
+        // 2. Stop and clear any active fallback HTML5 audio
+        if (currentActiveAudio) {
+          try {
+            currentActiveAudio.pause();
+            currentActiveAudio.currentTime = 0;
+            currentActiveAudio.src = '';
+          } catch (e) {}
+          currentActiveAudio = null;
+        }
+
+        // 3. Flag active utterance as cancelled to prevent firing fallback in onerror
+        if (currentActiveUtterance) {
+          currentActiveUtterance._cancelled = true;
+          currentActiveUtterance = null;
+        }
+
+        // 4. Cancel browser Web Speech API
         if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
           try {
-            if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-              window.speechSynthesis.cancel();
-            }
+            window.speechSynthesis.cancel();
+          } catch (e) {}
+        }
+      },
 
-            const utterance = new SpeechSynthesisUtterance(String(text));
+      speak(text, forcedAccent = null, forcedRate = null) {
+        if (!text || !AppState.user.speechEnabled) return;
+
+        // Cleanly stop any existing speech/audio before speaking
+        this.stop();
+
+        const accent = forcedAccent || AppState.user.voiceAccent || 'us';
+        const rate = forcedRate || AppState.user.speechRate || 1.0;
+        const cleanText = String(text).trim();
+        if (!cleanText) return;
+
+        // Try Web Speech API with robust safeguards
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          try {
+            const utterance = new SpeechSynthesisUtterance(cleanText);
             utterance.lang = (accent === 'uk') ? 'en-GB' : 'en-US';
             utterance.rate = rate;
+            currentActiveUtterance = utterance;
 
-            let voices = [];
-            try {
-              voices = window.speechSynthesis.getVoices() || [];
-            } catch (err) {
-              voices = [];
+            // Use cached voices to prevent synchronous IPC freezes on mobile devices
+            if (!cachedSpeechVoices || cachedSpeechVoices.length === 0) {
+              try {
+                cachedSpeechVoices = window.speechSynthesis.getVoices() || [];
+              } catch (err) {
+                cachedSpeechVoices = [];
+              }
             }
 
-            if (voices.length > 0) {
-              const targetVoice = voices.find(v => {
+            if (cachedSpeechVoices && cachedSpeechVoices.length > 0) {
+              const targetVoice = cachedSpeechVoices.find(v => {
                 if (!v) return false;
                 if (accent === 'uk') {
                   return (v.lang && v.lang.startsWith('en-GB')) || (v.name && (v.name.includes('UK') || v.name.includes('British')));
@@ -2941,25 +3027,52 @@
             }
 
             let fallbackTriggered = false;
+            let speechStarted = false;
+
             const triggerFallbackOnce = () => {
-              if (!fallbackTriggered) {
+              if (!fallbackTriggered && currentActiveUtterance === utterance && !utterance._cancelled) {
                 fallbackTriggered = true;
-                this.fallbackAudio(text);
+                this.fallbackAudio(cleanText);
+              }
+            };
+
+            utterance.onstart = () => {
+              speechStarted = true;
+              if (speechTimeoutId) {
+                clearTimeout(speechTimeoutId);
+                speechTimeoutId = null;
+              }
+            };
+
+            utterance.onend = () => {
+              if (speechTimeoutId) {
+                clearTimeout(speechTimeoutId);
+                speechTimeoutId = null;
+              }
+              if (currentActiveUtterance === utterance) {
+                currentActiveUtterance = null;
               }
             };
 
             utterance.onerror = (e) => {
-              console.warn('[AudioManager] Utterance error on iOS/Safari, falling back:', e);
+              // CRITICAL: Ignore intentional cancellation or interruption
+              if (utterance._cancelled || e.error === 'canceled' || e.error === 'interrupted') {
+                return;
+              }
+              if (speechTimeoutId) {
+                clearTimeout(speechTimeoutId);
+                speechTimeoutId = null;
+              }
               triggerFallbackOnce();
             };
 
-            // Watchdog: If Safari hangs without playing audio within 1.2s, fallback smoothly
-            if (speechTimeoutId) clearTimeout(speechTimeoutId);
+            // Watchdog: Only trigger if speech NEVER started after 1.5s (e.g. stalled audio session on iOS)
             speechTimeoutId = setTimeout(() => {
-              if (!window.speechSynthesis.speaking && !fallbackTriggered) {
+              if (!speechStarted && !fallbackTriggered && currentActiveUtterance === utterance && !utterance._cancelled) {
+                try { window.speechSynthesis.cancel(); } catch (err) {}
                 triggerFallbackOnce();
               }
-            }, 1200);
+            }, 1500);
 
             window.speechSynthesis.speak(utterance);
             return;
@@ -2968,18 +3081,39 @@
           }
         }
 
-        this.fallbackAudio(text);
+        this.fallbackAudio(cleanText);
       },
 
       fallbackAudio(text) {
         try {
+          if (currentActiveAudio) {
+            try {
+              currentActiveAudio.pause();
+              currentActiveAudio.currentTime = 0;
+              currentActiveAudio.src = '';
+            } catch (e) {}
+            currentActiveAudio = null;
+          }
+
           const firstWord = String(text).trim().split(' ')[0].toLowerCase().replace(/[^a-z]/g, '');
           if (!firstWord) return;
+
           const audio = new Audio(`https://api.dictionaryapi.dev/media/entries/en/${firstWord}-us.mp3`);
+          currentActiveAudio = audio;
+
+          audio.onended = () => {
+            if (currentActiveAudio === audio) currentActiveAudio = null;
+          };
+
           const p = audio.play();
           if (p && typeof p.catch === 'function') {
             p.catch(() => {
+              if (currentActiveAudio !== audio) return;
               const audio2 = new Audio(`https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(firstWord)}&type=2`);
+              currentActiveAudio = audio2;
+              audio2.onended = () => {
+                if (currentActiveAudio === audio2) currentActiveAudio = null;
+              };
               const p2 = audio2.play();
               if (p2 && typeof p2.catch === 'function') p2.catch(() => {});
             });
@@ -4008,6 +4142,7 @@
             enBtns.forEach(b => b.style.borderColor = '');
             btn.style.borderColor = 'var(--primary)';
             selectedEn = btn;
+            AudioManager.stop();
             AudioManager.speak(btn.textContent.trim());
             checkPair();
           });
@@ -4110,12 +4245,14 @@
       },
 
       advanceNextWord() {
+        AudioManager.stop();
         SessionState.queue.shift();
         SessionState.currentIndex++;
         this.renderCurrentCard();
       },
 
       finishSession() {
+        AudioManager.stop();
         SessionState.active = false;
         Confetti.fire();
 
@@ -4158,6 +4295,7 @@
      * =========================================================================
      */
     function switchView(viewName) {
+      AudioManager.stop();
       document.querySelectorAll('.view-screen').forEach(el => el.classList.remove('active'));
       const targetView = document.getElementById(`view-${viewName}`);
       if (targetView) targetView.classList.add('active');
@@ -4832,6 +4970,7 @@
      * =========================================================================
      */
     document.addEventListener('DOMContentLoaded', () => {
+      AudioManager.init();
       // Modal: Add Custom Word
       const btnOpenAddWord = document.getElementById('btn-open-add-custom-word');
       if (btnOpenAddWord) {
@@ -5005,6 +5144,7 @@
       });
 
       document.getElementById('btn-confirm-exit-session').addEventListener('click', () => {
+        AudioManager.stop();
         closeModal('modal-confirm-exit');
         SessionState.active = false;
         switchView('home');
