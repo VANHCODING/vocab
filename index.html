@@ -1163,6 +1163,137 @@
       color: var(--text-sub);
     }
 
+    /* Single-Surface Minimalist Intro Card (Simultaneous Meaning & Examples) */
+    .intro-card-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 24px 22px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 18px;
+      text-align: left;
+      contain: content;
+    }
+
+    .intro-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      gap: 10px;
+    }
+
+    .intro-context-pill {
+      font-size: 0.76rem;
+      font-weight: 700;
+      background: var(--bg-subtle);
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      color: var(--text-sub);
+    }
+
+    .intro-topic-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-sub);
+      text-align: right;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 55%;
+    }
+
+    .intro-word-block {
+      margin-bottom: 14px;
+    }
+
+    .intro-word-pos {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-sub);
+    }
+
+    /* Compact Pronunciation Bar */
+    .compact-pron-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .audio-accent-btn-sm {
+      padding: 4px 10px !important;
+      gap: 5px !important;
+      font-size: 0.78rem !important;
+      min-height: 28px !important;
+    }
+
+    .audio-accent-btn-sm .ipa-text {
+      font-size: 0.82rem !important;
+    }
+
+    .intro-meaning-section {
+      border-top: 1px solid var(--border-color);
+      padding-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .intro-meaning-vi {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .intro-definition-en {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.45;
+    }
+
+    .intro-example-box {
+      background: var(--bg-subtle);
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      border: 1px solid var(--border-color);
+    }
+
+    .intro-example-en {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      line-height: 1.45;
+    }
+
+    .intro-example-vi {
+      font-size: 0.84rem;
+      color: var(--text-sub);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    .intro-linguistic-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    @media (max-width: 767px) {
+      .intro-card-container {
+        padding: 18px 16px;
+      }
+      .intro-meaning-vi {
+        font-size: 1.2rem;
+      }
+      .intro-topic-title {
+        max-width: 50%;
+      }
+    }
+
     /* 3D Flip Card Container */
     .flip-card-container {
       perspective: 1200px;
@@ -3638,116 +3769,98 @@
         }
       },
 
-      /* Enhanced Flashcard with Collocations, Word Family, UK/US IPA */
+      /* Minimalist Single-Surface Word Intro Card (Meaning & Examples Visible Immediately) */
       renderFlashcardIntro(word, root) {
+        SessionState.currentIntroWord = word;
+        SessionState.currentQuestion = null;
+
         const collocations = (word.collocations && word.collocations.length > 0) ? word.collocations : ['practice using ' + word.word];
         const wf = word.wordFamily || {};
         const registerTag = word.context || '[Giao tiếp chuẩn mực]';
 
         root.innerHTML = `
-          <div class="flip-card-container" id="session-flip-container" aria-label="Thẻ ghi nhớ từ mới">
-            <div class="flip-card-inner" id="session-flip-card">
-              <!-- FRONT FACE -->
-              <div class="card-face card-face-front">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <div style="display: flex; align-items: center; gap: 6px;">
-                    <span class="level-badge badge-${word.level.toLowerCase()}">Cấp ${word.level}</span>
-                    <span style="font-size: 0.76rem; font-weight: 700; background: var(--bg-subtle); padding: 2px 8px; border-radius: 4px; color: var(--text-sub);">${registerTag}</span>
-                  </div>
-                  <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-sub);">${word.topic}</span>
-                </div>
+          <div class="intro-card-container" id="session-intro-card">
+            <!-- Header: Level Badge, Context & Topic -->
+            <div class="intro-card-header">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="level-badge badge-${word.level.toLowerCase()}">Cấp ${word.level}</span>
+                <span class="intro-context-pill">${registerTag}</span>
+              </div>
+              <span class="intro-topic-title">${word.topic}</span>
+            </div>
 
-                <div style="margin: auto 0;">
-                  <h2 class="flashcard-word-title">${word.word}</h2>
-                  <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-sub); margin-bottom: 8px;">(${word.pos})</div>
-
-                  <!-- UK and US Pronunciation Bar -->
-                  <div class="audio-pron-bar">
-                    <button class="audio-accent-btn" onclick="event.stopPropagation(); AudioManager.speak('${word.word}', 'us', 1.0)">
-                      <span>🇺🇸 US</span>
-                      <span class="ipa-text">${word.ipa_us || word.ipa}</span>
-                      <span><svg class="svg-icon-speaker" style="width: 15px; height: 15px; display: inline-block; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></span>
-                    </button>
-                    <button class="audio-accent-btn" onclick="event.stopPropagation(); AudioManager.speak('${word.word}', 'uk', 1.0)">
-                      <span>🇬🇧 UK</span>
-                      <span class="ipa-text">${word.ipa_uk || word.ipa}</span>
-                      <span><svg class="svg-icon-speaker" style="width: 15px; height: 15px; display: inline-block; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></span>
-                    </button>
-                    <button class="audio-accent-btn" style="background: var(--primary-light); color: var(--primary);" onclick="event.stopPropagation(); AudioManager.speak('${word.word}', null, 0.8)">
-                      <span>🐢 0.8x</span>
-                    </button>
-                  </div>
-
-                  <p style="font-size: 0.82rem; color: var(--text-sub); margin-top: 10px;">
-                    💡 Chạm vào thẻ hoặc bấm phím <strong>[Space]</strong> để lật xem nghĩa, collocations & họ từ vựng
-                  </p>
-                </div>
-
-                <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-sub);">
-                  Thẻ giới thiệu từ mới • Nhấn để lật
-                </div>
+            <!-- Word, POS and Compact Pronunciation Bar -->
+            <div class="intro-word-block">
+              <div style="display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;">
+                <h2 class="flashcard-word-title" style="margin: 0; line-height: 1.15;">${word.word}</h2>
+                <span class="intro-word-pos">(${word.pos})</span>
               </div>
 
-              <!-- BACK FACE -->
-              <div class="card-face card-face-back">
-                <div>
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                    <span class="level-badge badge-${word.level.toLowerCase()}">Cấp ${word.level}</span>
-                    <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">${word.word}</span>
-                  </div>
-
-                  <div style="font-size: 1.45rem; font-weight: 800; color: var(--primary); margin-bottom: 2px;">
-                    ${word.meaningVi}
-                  </div>
-                  <div style="font-size: 0.86rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px;">
-                    "${word.definitionEn}"
-                  </div>
-
-                  <!-- Collocations Box -->
-                  <div class="linguistic-box">
-                    <div class="linguistic-title">
-                      <span>🔗 Cụm từ đi kèm (Collocations / Phrasal):</span>
-                    </div>
-                    <div class="colloc-tags-wrap">
-                      ${collocations.map(c => `<span class="colloc-chip">${c}</span>`).join('')}
-                    </div>
-                  </div>
-
-                  <!-- Word Family Box -->
-                  ${Object.keys(wf).length > 0 ? `
-                  <div class="linguistic-box" style="margin-top: 8px;">
-                    <div class="linguistic-title">
-                      <span>🌳 Họ từ vựng (Word Family):</span>
-                    </div>
-                    <div class="wordfamily-grid">
-                      ${Object.entries(wf).map(([k, v]) => `
-                        <div class="wf-item"><span class="wf-label">${k}:</span> <strong>${v}</strong></div>
-                      `).join('')}
-                    </div>
-                  </div>` : ''}
-
-                  <!-- Example Sentence with Audio (Hidden if empty) -->
-                  ${word.example ? `
-                  <div class="linguistic-box" style="margin-top: 8px; background: var(--bg-subtle);">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
-                      <div style="font-weight: 700; font-size: 0.9rem; color: var(--text-main);">
-                        "${highlightTargetWord(word.example, word.word)}"
-                      </div>` : ''}
-                      <button class="flashcard-audio-btn" style="width: 32px; height: 32px; margin: 0; flex-shrink: 0;" onclick="event.stopPropagation(); AudioManager.speak('${word.example.replace(/'/g, "\'")}')" title="Phát âm câu ví dụ">
-                        <svg class="svg-icon-speaker" style="width: 15px; height: 15px; display: inline-block; vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-                      </button>
-                    </div>
-                    <div style="font-size: 0.82rem; color: var(--text-sub); margin-top: 4px;">
-                      Dịch: ${word.exampleVi}
-                    </div>
-                  </div>
-                </div>
-
-                <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-sub); margin-top: 8px;">
-                  Chạm để lật lại • Nhấn phím [Enter] để làm bài tập
-                </div>
+              <!-- Compact Pronunciation Bar (Smaller, unobtrusive pills) -->
+              <div class="compact-pron-bar">
+                <button class="audio-accent-btn audio-accent-btn-sm" onclick="event.stopPropagation(); AudioManager.speak('${word.word}', 'us', 1.0)" title="Phát âm tiếng Mỹ (US)">
+                  <span>🇺🇸 US</span>
+                  <span class="ipa-text">${word.ipa_us || word.ipa}</span>
+                  <svg class="svg-icon-speaker" style="width: 13px; height: 13px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                </button>
+                <button class="audio-accent-btn audio-accent-btn-sm" onclick="event.stopPropagation(); AudioManager.speak('${word.word}', 'uk', 1.0)" title="Phát âm tiếng Anh (UK)">
+                  <span>🇬🇧 UK</span>
+                  <span class="ipa-text">${word.ipa_uk || word.ipa}</span>
+                  <svg class="svg-icon-speaker" style="width: 13px; height: 13px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                </button>
+                <button class="audio-accent-btn audio-accent-btn-sm" style="background: var(--primary-light); color: var(--primary);" onclick="event.stopPropagation(); AudioManager.speak('${word.word}', null, 0.8)" title="Nghe chậm 0.8x">
+                  <span>🐢 0.8x</span>
+                </button>
               </div>
             </div>
+
+            <!-- Meaning & Definition (Simultaneously Visible) -->
+            <div class="intro-meaning-section">
+              <div class="intro-meaning-vi">${word.meaningVi}</div>
+              <div class="intro-definition-en">"${word.definitionEn}"</div>
+            </div>
+
+            <!-- Example Sentence Box (Minimalist & Clean) -->
+            ${word.example ? `
+            <div class="intro-example-box">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+                <div class="intro-example-en">
+                  "${highlightTargetWord(word.example, word.word)}"
+                </div>
+                <button class="flashcard-audio-btn" style="width: 30px; height: 30px; margin: 0; flex-shrink: 0;" onclick="event.stopPropagation(); AudioManager.speak('${word.example.replace(/'/g, "'")}')" title="Phát âm câu ví dụ">
+                  <svg class="svg-icon-speaker" style="width: 14px; height: 14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                </button>
+              </div>
+              <div class="intro-example-vi">
+                Dịch: ${word.exampleVi}
+              </div>
+            </div>` : ''}
+
+            <!-- Collocations & Word Family (Compact & Clean) -->
+            ${((collocations && collocations.length > 0) || Object.keys(wf).length > 0) ? `
+            <div class="intro-linguistic-wrap">
+              ${(collocations && collocations.length > 0) ? `
+              <div class="linguistic-box" style="padding: 10px 12px; margin: 0;">
+                <div class="linguistic-title" style="margin-bottom: 6px; font-size: 0.78rem;">
+                  <span>🔗 Cụm từ đi kèm (Collocations):</span>
+                </div>
+                <div class="colloc-tags-wrap">
+                  ${collocations.map(c => `<span class="colloc-chip" style="font-size: 0.78rem; padding: 3px 8px;">${c}</span>`).join('')}
+                </div>
+              </div>` : ''}
+
+              ${Object.keys(wf).length > 0 ? `
+              <div class="linguistic-box" style="padding: 10px 12px; margin: 0;">
+                <div class="linguistic-title" style="margin-bottom: 6px; font-size: 0.78rem;">
+                  <span>🌳 Họ từ vựng (Word Family):</span>
+                </div>
+                <div class="wordfamily-grid">
+                  ${Object.entries(wf).map(([k, v]) => `
+                    <div class="wf-item" style="font-size: 0.8rem;"><span class="wf-label">${k}:</span> <strong>${v}</strong></div>
+                  `).join('')}
+                </div>
+              </div>` : ''}
+            </div>` : ''}
           </div>
 
           <button class="btn-main-cta btn-primary-gradient" id="btn-flashcard-continue" style="min-height: 50px;">
@@ -3757,16 +3870,15 @@
 
         setTimeout(() => AudioManager.speak(word.word, AppState.user.voiceAccent, 1.0), 300);
 
-        const card = document.getElementById('session-flip-card');
-        card.addEventListener('click', () => card.classList.toggle('is-flipped'));
-
         document.getElementById('btn-flashcard-continue').addEventListener('click', () => {
+          SessionState.currentIntroWord = null;
           this.renderQuizQuestion(word, root);
         });
       },
 
       /* Quiz Engine: 6 Diversified Modes */
       renderQuizQuestion(word, root) {
+        SessionState.currentIntroWord = null;
         const types = ['mc_vi', 'mc_en', 'fill_blank', 'listen_spell', 'typing', 'matching'];
         const qType = types[Math.floor(Math.random() * types.length)];
 
@@ -4246,6 +4358,7 @@
 
       advanceNextWord() {
         AudioManager.stop();
+        SessionState.currentIntroWord = null;
         SessionState.queue.shift();
         SessionState.currentIndex++;
         this.renderCurrentCard();
@@ -5325,18 +5438,12 @@
         }
 
         if (SessionState.active) {
-          // Space: Flip card or replay audio
-          if (e.key === ' ' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            const card = document.getElementById('session-flip-card');
-            if (card) {
-              e.preventDefault();
-              card.classList.toggle('is-flipped');
-            }
-          }
-
-          // R key: replay pronunciation
-          if ((e.key === 'r' || e.key === 'R') && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            if (SessionState.currentQuestion) {
+          // Space & R: Replay word pronunciation
+          if ((e.key === ' ' || e.key === 'r' || e.key === 'R') && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+            e.preventDefault();
+            if (SessionState.currentIntroWord) {
+              AudioManager.speak(SessionState.currentIntroWord.word);
+            } else if (SessionState.currentQuestion) {
               AudioManager.speak(SessionState.currentQuestion.word.word);
             }
           }
@@ -5348,10 +5455,17 @@
             if (buttons[index]) buttons[index].click();
           }
 
-          // Enter: Next card if answered
-          if (e.key === 'Enter' && SessionState.isAnswered) {
-            const nextBtn = document.getElementById('btn-quiz-next');
-            if (nextBtn) nextBtn.click();
+          // Enter: Continue to quiz from intro, or next card if answered
+          if (e.key === 'Enter') {
+            const continueIntroBtn = document.getElementById('btn-flashcard-continue');
+            if (continueIntroBtn) {
+              continueIntroBtn.click();
+              return;
+            }
+            if (SessionState.isAnswered) {
+              const nextBtn = document.getElementById('btn-quiz-next');
+              if (nextBtn) nextBtn.click();
+            }
           }
         }
       });
