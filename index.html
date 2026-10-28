@@ -7,6 +7,9 @@
   <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>LexiUp - Học Từ Vựng Tiếng Anh B1, B2, C1 Chuẩn CEFR</title>
   <meta name="description" content="Ứng dụng học từ vựng tiếng Anh tương tác chuẩn CEFR B1, B2, C1 theo phương pháp lặp lại ngắt quãng (SRS) dành cho người Việt.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -523,17 +526,87 @@
         font-size: 0.92rem;
       }
 
-      /* Adaptive Flashcard height on mobile screens */
-      .flip-card-container, .flip-card-inner {
-        min-height: 380px;
+      /* Minimalist Intro Card layout on mobile screens */
+      .intro-card-container {
+        padding: 16px 14px !important;
+        margin-bottom: 14px !important;
+        border-radius: var(--radius-lg) !important;
       }
 
-      .card-face {
-        padding: 18px 16px;
+      .intro-card-header {
+        margin-bottom: 10px;
+        gap: 6px;
       }
 
       .flashcard-word-title {
-        font-size: 1.85rem;
+        font-size: 1.65rem !important;
+        letter-spacing: -0.3px;
+      }
+
+      .intro-word-pos {
+        font-size: 0.88rem;
+      }
+
+      .compact-pron-bar {
+        gap: 5px;
+        margin-top: 6px;
+      }
+
+      .audio-accent-btn-sm {
+        padding: 4px 8px !important;
+        min-height: 32px !important;
+        font-size: 0.76rem !important;
+      }
+
+      .audio-accent-btn-sm .ipa-text {
+        font-size: 0.8rem !important;
+      }
+
+      .intro-meaning-section {
+        padding-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .intro-meaning-vi {
+        font-size: 1.18rem !important;
+        line-height: 1.35;
+      }
+
+      .intro-definition-en {
+        font-size: 0.82rem !important;
+        line-height: 1.4;
+      }
+
+      .intro-example-box {
+        padding: 10px 12px !important;
+        margin-bottom: 10px;
+      }
+
+      .intro-example-en {
+        font-size: 0.88rem !important;
+        line-height: 1.4;
+      }
+
+      .intro-example-vi {
+        font-size: 0.8rem !important;
+        line-height: 1.35;
+      }
+
+      .intro-topic-title {
+        font-size: 0.76rem;
+        max-width: 48%;
+        text-align: right;
+      }
+
+      .intro-context-pill {
+        font-size: 0.72rem;
+        padding: 2px 6px;
+      }
+
+      #btn-flashcard-continue {
+        min-height: 48px !important;
+        font-size: 0.92rem !important;
+        width: 100% !important;
       }
 
       /* Modal Box padding on mobile */
@@ -2209,7 +2282,7 @@
             <!-- Session Bottom Keyboard Hints Bar -->
             <div class="session-keyboard-hints" style="display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 14px; font-size: 0.78rem; color: var(--text-sub); flex-wrap: wrap;">
               <span><kbd class="key-badge">1</kbd> - <kbd class="key-badge">4</kbd> Chọn đáp án</span>
-              <span><kbd class="key-badge">Space</kbd> Lật thẻ</span>
+              <span><kbd class="key-badge">Space</kbd> Nghe lại âm</span>
               <span><kbd class="key-badge">Enter</kbd> Tiếp tục</span>
               <span><kbd class="key-badge">R</kbd> Nghe phát âm</span>
             </div>
@@ -3070,9 +3143,14 @@
     let currentActiveAudio = null;
     let currentActiveUtterance = null;
     let cachedSpeechVoices = null;
+    let isAudioSessionUnlocked = false;
 
     const AudioManager = {
       init() {
+        // 1. Explicitly configure 'playback' audio session (Bypasses iOS silent switch & Android DND)
+        this.unlockAudioSession();
+
+        // 2. Pre-cache TTS voices for offline fallback
         if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
           const loadVoices = () => {
             try {
@@ -3085,6 +3163,44 @@
             window.speechSynthesis.onvoiceschanged = loadVoices;
           }
         }
+
+        // 3. User interaction listener to prime iOS AVAudioSession to Playback mode
+        const primeOnGesture = () => {
+          this.unlockAudioSession();
+          document.removeEventListener('click', primeOnGesture);
+          document.removeEventListener('touchstart', primeOnGesture);
+        };
+        document.addEventListener('click', primeOnGesture, { passive: true });
+        document.addEventListener('touchstart', primeOnGesture, { passive: true });
+      },
+
+      unlockAudioSession() {
+        // W3C Audio Session API (iOS 16.4+, Android Chrome)
+        // 'playback' forces the OS to treat all audio as Media Playback (bypasses hardware silent switch & DND)
+        if (typeof navigator !== 'undefined' && 'audioSession' in navigator) {
+          try {
+            navigator.audioSession.type = 'playback';
+          } catch (e) {}
+        }
+
+        // Unlock Web Audio Context
+        try {
+          const ctx = getAudioContext();
+          if (ctx && ctx.state === 'suspended') {
+            ctx.resume();
+          }
+        } catch (e) {}
+
+        // Prime iOS AVAudioSessionCategoryPlayback with a 1-frame silent media buffer
+        if (!isAudioSessionUnlocked) {
+          isAudioSessionUnlocked = true;
+          try {
+            const silent = new Audio('data:audio/wav;base64,UklGRjIAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=');
+            silent.volume = 0.01;
+            const p = silent.play();
+            if (p && typeof p.catch === 'function') p.catch(() => {});
+          } catch (e) {}
+        }
       },
 
       stop() {
@@ -3094,7 +3210,7 @@
           speechTimeoutId = null;
         }
 
-        // 2. Stop and clear any active fallback HTML5 audio
+        // 2. Stop and clear any active HTML5 audio
         if (currentActiveAudio) {
           try {
             currentActiveAudio.pause();
@@ -3124,12 +3240,63 @@
         // Cleanly stop any existing speech/audio before speaking
         this.stop();
 
+        // Ensure audio session is routed to Media Playback
+        this.unlockAudioSession();
+
         const accent = forcedAccent || AppState.user.voiceAccent || 'us';
         const rate = forcedRate || AppState.user.speechRate || 1.0;
         const cleanText = String(text).trim();
         if (!cleanText) return;
 
-        // Try Web Speech API with robust safeguards
+        // Determine audio source:
+        // HTML5 Audio elements are classified by iOS and Android as MEDIA PLAYBACK (STREAM_MUSIC).
+        // This ensures audio plays EVEN IN SILENT MODE / DO NOT DISTURB!
+        const isLongSentence = cleanText.includes(' ') && cleanText.length > 25;
+        let audioUrl = '';
+
+        if (isLongSentence) {
+          // Google Translate media stream for full sentences
+          audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
+        } else {
+          // Youdao authentic native human dictionary audio (type=2: US, type=1: UK)
+          const youdaoType = (accent === 'uk') ? '1' : '2';
+          audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=${youdaoType}`;
+        }
+
+        try {
+          const audio = new Audio(audioUrl);
+          audio.playbackRate = rate;
+          currentActiveAudio = audio;
+
+          audio.onended = () => {
+            if (currentActiveAudio === audio) currentActiveAudio = null;
+          };
+
+          audio.onerror = () => {
+            if (currentActiveAudio !== audio) return;
+            // If primary audio stream fails (offline mode), fallback to Web Speech
+            this.speakWithWebSpeech(cleanText, accent, rate);
+          };
+
+          const p = audio.play();
+          if (p && typeof p.then === 'function') {
+            p.catch((err) => {
+              // If playback was blocked by browser autoplay policy, fallback to Web Speech
+              if (currentActiveAudio === audio) {
+                this.speakWithWebSpeech(cleanText, accent, rate);
+              }
+            });
+            return;
+          }
+        } catch (e) {
+          console.warn('[AudioManager] HTML5 Media error, attempting Web Speech:', e);
+        }
+
+        // Secondary fallback to Web Speech API
+        this.speakWithWebSpeech(cleanText, accent, rate);
+      },
+
+      speakWithWebSpeech(cleanText, accent, rate) {
         if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
           try {
             const utterance = new SpeechSynthesisUtterance(cleanText);
@@ -3137,7 +3304,6 @@
             utterance.rate = rate;
             currentActiveUtterance = utterance;
 
-            // Use cached voices to prevent synchronous IPC freezes on mobile devices
             if (!cachedSpeechVoices || cachedSpeechVoices.length === 0) {
               try {
                 cachedSpeechVoices = window.speechSynthesis.getVoices() || [];
@@ -3157,105 +3323,28 @@
               if (targetVoice) utterance.voice = targetVoice;
             }
 
-            let fallbackTriggered = false;
-            let speechStarted = false;
-
-            const triggerFallbackOnce = () => {
-              if (!fallbackTriggered && currentActiveUtterance === utterance && !utterance._cancelled) {
-                fallbackTriggered = true;
-                this.fallbackAudio(cleanText);
-              }
-            };
-
-            utterance.onstart = () => {
-              speechStarted = true;
-              if (speechTimeoutId) {
-                clearTimeout(speechTimeoutId);
-                speechTimeoutId = null;
-              }
-            };
-
             utterance.onend = () => {
-              if (speechTimeoutId) {
-                clearTimeout(speechTimeoutId);
-                speechTimeoutId = null;
-              }
               if (currentActiveUtterance === utterance) {
                 currentActiveUtterance = null;
               }
             };
 
             utterance.onerror = (e) => {
-              // CRITICAL: Ignore intentional cancellation or interruption
               if (utterance._cancelled || e.error === 'canceled' || e.error === 'interrupted') {
                 return;
               }
-              if (speechTimeoutId) {
-                clearTimeout(speechTimeoutId);
-                speechTimeoutId = null;
-              }
-              triggerFallbackOnce();
             };
 
-            // Watchdog: Only trigger if speech NEVER started after 1.5s (e.g. stalled audio session on iOS)
-            speechTimeoutId = setTimeout(() => {
-              if (!speechStarted && !fallbackTriggered && currentActiveUtterance === utterance && !utterance._cancelled) {
-                try { window.speechSynthesis.cancel(); } catch (err) {}
-                triggerFallbackOnce();
-              }
-            }, 1500);
-
             window.speechSynthesis.speak(utterance);
-            return;
           } catch (e) {
-            console.warn('[AudioManager] Web Speech exception on iOS Safari:', e);
+            console.warn('[AudioManager] Web Speech error:', e);
           }
-        }
-
-        this.fallbackAudio(cleanText);
-      },
-
-      fallbackAudio(text) {
-        try {
-          if (currentActiveAudio) {
-            try {
-              currentActiveAudio.pause();
-              currentActiveAudio.currentTime = 0;
-              currentActiveAudio.src = '';
-            } catch (e) {}
-            currentActiveAudio = null;
-          }
-
-          const firstWord = String(text).trim().split(' ')[0].toLowerCase().replace(/[^a-z]/g, '');
-          if (!firstWord) return;
-
-          const audio = new Audio(`https://api.dictionaryapi.dev/media/entries/en/${firstWord}-us.mp3`);
-          currentActiveAudio = audio;
-
-          audio.onended = () => {
-            if (currentActiveAudio === audio) currentActiveAudio = null;
-          };
-
-          const p = audio.play();
-          if (p && typeof p.catch === 'function') {
-            p.catch(() => {
-              if (currentActiveAudio !== audio) return;
-              const audio2 = new Audio(`https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(firstWord)}&type=2`);
-              currentActiveAudio = audio2;
-              audio2.onended = () => {
-                if (currentActiveAudio === audio2) currentActiveAudio = null;
-              };
-              const p2 = audio2.play();
-              if (p2 && typeof p2.catch === 'function') p2.catch(() => {});
-            });
-          }
-        } catch (e) {
-          console.warn('[AudioManager] Silent fallback catch:', e);
         }
       },
 
       playCorrectSound() {
         if (!AppState.user.soundEffectsEnabled) return;
+        this.unlockAudioSession();
         try {
           const ctx = getAudioContext();
           if (!ctx) return;
@@ -3289,6 +3378,7 @@
 
       playErrorSound() {
         if (!AppState.user.soundEffectsEnabled) return;
+        this.unlockAudioSession();
         try {
           const ctx = getAudioContext();
           if (!ctx) return;
@@ -3313,7 +3403,6 @@
         }
       }
     };
-
     /**
      * =========================================================================
      * 4. SPACED REPETITION ENGINE (LEITNER 5-BOX WITH SOFTENED PENALTY)
