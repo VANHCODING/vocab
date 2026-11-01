@@ -1997,14 +1997,19 @@
         scroll-behavior: auto !important;
       }
     }
-    .learning-guide { border: 1px solid var(--primary-border); border-left: 5px solid var(--primary); background: var(--bg-card); padding: 22px; border-radius: var(--radius-md); margin-bottom: 24px; }
-    .learning-guide h2 { font-size: 1.3rem; margin-bottom: 8px; }
-    .learning-guide p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; max-width: 70ch; }
-    .learning-steps { display: flex; flex-wrap: wrap; gap: 8px 28px; padding-left: 22px; margin: 12px 0 18px; color: var(--text-muted); }
+    .study-toolbar { border-bottom: 1px solid var(--border-color); padding-bottom: 16px; margin-bottom: 20px; }
     .study-controls { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin: 14px 0; }
     .study-controls select { font: inherit; color: var(--text-main); background: var(--bg-input); border: 1px solid var(--border-color); padding: 10px 12px; border-radius: var(--radius-sm); min-height: 44px; }
     .study-controls label { display: flex; gap: 10px; align-items: center; min-height: 44px; font-size: 0.9rem; }
     .study-controls input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--primary); flex-shrink: 0; }
+    .study-toolbar .study-controls { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto; align-items: end; gap: 12px; margin: 0; }
+    .study-toolbar label { flex-direction: column; align-items: stretch; gap: 6px; min-width: 0; font-size: 0.8rem; color: var(--text-muted); }
+    .study-toolbar select { width: 100%; min-width: 0; font-size: 0.88rem; }
+    .study-summary { align-self: center; color: var(--text-muted); font-size: 0.82rem; line-height: 1.5; }
+    .curriculum-details { margin-top: 16px; color: var(--text-sub); font-size: 0.86rem; line-height: 1.7; }
+    .curriculum-details summary { cursor: pointer; color: var(--text-main); font-weight: 600; min-height: 44px; padding: 10px 0; }
+    .curriculum-details p + p { margin-top: 10px; }
+    #study-reviewed-only { width: 20px; height: 20px; accent-color: var(--primary); flex-shrink: 0; }
     .content-quality { display: inline-block; font-size: 0.76rem; line-height: 1.6; color: var(--primary); padding: 3px 8px; background: var(--primary-light); border-radius: var(--radius-sm); margin: 4px 0; }
     .content-hold, .content-unreviewed { background: var(--bg-subtle); color: var(--text-muted); }
     .usage-note { line-height: 1.7; font-size: 0.88rem; padding: 12px; background: var(--bg-subtle); border-left: 3px solid var(--primary); border-radius: var(--radius-sm); margin-top: 12px; }
@@ -2027,11 +2032,10 @@
     #library-topic-grid, #topic-word-list { scroll-margin-top: 24px; }
     [data-reduced-motion="true"] *, [data-reduced-motion="true"] *::before, [data-reduced-motion="true"] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
     @media (max-width: 640px) {
-      .learning-guide { padding: 16px; }
-      .learning-steps { display: block; }
-      .learning-steps li { margin-bottom: 6px; }
       .study-controls { align-items: stretch; flex-direction: column; gap: 8px; }
       .study-controls select { flex: 1; min-width: 0; }
+      .study-toolbar .study-controls { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 10px; }
+      .study-summary { grid-column: 1 / -1; }
       .audio-status { bottom: calc(84px + env(safe-area-inset-bottom)); width: 90vw; }
       .settings-row { flex-wrap: wrap; gap: 12px; }
       .btn-segmented-wrap { max-width: 100%; flex-wrap: wrap; }
@@ -2118,19 +2122,12 @@
             <p class="greeting-subtitle" id="current-date-text">Sẵn sàng nâng cấp vốn từ vựng hôm nay?</p>
           </div>
 
-          <section class="learning-guide" aria-labelledby="learning-guide-title">
-            <h2 id="learning-guide-title">Học từ để đọc hiểu IELTS</h2>
-            <p>Học 5–10 từ cùng chủ đề, hiểu nghĩa trong ngữ cảnh và nhận ra cách diễn đạt tương đương. Ôn từ đến hạn trước khi học nhóm mới.</p>
-            <ol class="learning-steps"><li>Ôn từ đến hạn trước</li><li>Học nhóm từ mới nhỏ</li><li>Đặt một câu của riêng bạn</li></ol>
+          <section class="study-toolbar" aria-label="Tùy chọn học từ">
             <div class="study-controls">
-              <label for="study-focus">Kho đang học <select id="study-focus"><option value="ielts">IELTS Academic Reading</option><option value="all">Toàn bộ từ vựng</option></select></label>
-              <label for="study-level">Cấp độ muốn học <select id="study-level"><option value="B1">B1 · Nền tảng đọc hiểu</option><option value="B2">B2 · Từ vựng học thuật</option><option value="C1">C1 · Học thuật chọn lọc</option></select></label>
-              <label><input id="study-reviewed-only" type="checkbox" checked>Chỉ học nội dung đã biên tập (khuyên dùng)</label>
+              <label for="study-focus">Kho học <select id="study-focus"><option value="ielts">IELTS Reading</option><option value="all">Toàn bộ từ vựng</option></select></label>
+              <label for="study-level">Cấp độ <select id="study-level"><option value="B1">B1 · Nền tảng</option><option value="B2">B2 · Học thuật</option><option value="C1">C1 · Chọn lọc</option></select></label>
+              <span id="curriculum-summary" class="study-summary" role="status" aria-live="polite"></span>
             </div>
-            <p id="curriculum-summary" role="status"></p>
-            <p class="usage-note" id="reading-coverage-note">Kho IELTS hiện có 1.033 mục được tuyển chọn theo giá trị học thuật và khả năng dùng ở nhiều chủ đề, không tự thêm chỉ vì nhãn B1/B2 hoặc khớp Reading. Đã lọc từ quá cơ bản và thuật ngữ quá hẹp; các mục ngoài danh sách vẫn ở Toàn bộ kho, giữ nguyên tiến độ. Tham khảo 228 bản Reading công khai Cambridge 1–19; nguồn độc lập có thể có lỗi chép, chưa phải toàn bộ từ đã duyệt nghĩa theo từng bài. Không chia theo sách. Paraphrase chỉ tương đương trong ngữ cảnh.</p>
-            <p class="usage-note">Nhãn B1/B2 của các mục bổ sung là mức xếp lộ trình ước lượng, không phải chứng nhận CEFR cho từng từ. “Đã biên tập” không có nghĩa là đã được thẩm định độc lập.</p>
-            <p style="font-size: 0.8rem;">Nhãn B1–B2 của cụm từ bổ sung là gợi ý sư phạm. Bài học từ vựng không thay thế lộ trình đầy đủ về nghe, nói, đọc, viết và ngữ pháp.</p>
           </section>
 
           <!-- Placement Test Banner (For new or returning learners) -->
@@ -2524,6 +2521,20 @@
                 <button class="btn-seg" data-goal-btn="20">20</button>
               </div>
             </div>
+          </div>
+
+          <div class="settings-group">
+            <h3 style="font-size: 1rem; font-weight: 800; margin-bottom: 12px; color: var(--text-main);">Nội dung học</h3>
+            <div class="settings-row">
+              <label for="study-reviewed-only">Chỉ học nội dung đã biên tập <span style="display: block; color: var(--text-muted); font-size: 0.82rem;">Khuyên dùng. Mục bị đánh dấu lỗi luôn được loại khỏi bài học.</span></label>
+              <input id="study-reviewed-only" type="checkbox" checked>
+            </div>
+            <details class="curriculum-details">
+              <summary>Nguồn từ & lưu ý học tập</summary>
+              <p id="reading-coverage-note">Kho IELTS có 1.033 mục tuyển chọn, ưu tiên từ học thuật dùng được ở nhiều chủ đề. Từ không được chọn vẫn có trong Toàn bộ từ vựng và giữ nguyên tiến độ.</p>
+              <p>Tham khảo 228 bản Reading công khai Cambridge 1–19 trên nguồn độc lập, có thể có lỗi chép. Khớp dạng từ không xác nhận nghĩa trong mọi bài hoặc ngữ liệu chính thức từ nhà xuất bản. Nghĩa và ví dụ học tập được biên soạn riêng; paraphrase chỉ tương đương trong ngữ cảnh.</p>
+              <p>Nhãn B1/B2/C1 là gợi ý lộ trình, không phải chứng nhận CEFR cho từng từ. Nội dung đã biên tập chưa được thẩm định độc lập. Học từ vựng không thay thế luyện nghe, nói, đọc, viết và ngữ pháp.</p>
+            </details>
           </div>
 
           <!-- Voice & Speech Customization -->
@@ -4827,12 +4838,10 @@
       const studyLevel = AppState.user.studyLevel || 'B1';
       const vocabulary = getStudyVocabulary();
       const readyCount = vocabulary.filter(word => word.level === studyLevel && isStudyReady(word)).length;
-      const reviewedCount = vocabulary.filter(word => word.level === studyLevel && word.reviewed).length;
       document.getElementById('study-focus').value = AppState.user.studyFocus;
       document.getElementById('study-level').value = studyLevel;
       document.getElementById('study-reviewed-only').checked = AppState.user.reviewedOnly;
-      const pendingCount = vocabulary.filter(word => word.level === studyLevel && !word.reviewed && !word.isCustom).length;
-      document.getElementById('curriculum-summary').textContent = `${studyLevel}: ${readyCount} mục đủ điều kiện học; ${reviewedCount} mục đã biên tập. ${pendingCount ? `${pendingCount} mục còn chờ duyệt ngữ nghĩa.` : 'Không còn mục từ điển chờ biên tập ở cấp độ này.'}`;
+      document.getElementById('curriculum-summary').textContent = `${readyCount.toLocaleString('vi-VN')} từ sẵn sàng học`;
       const hour = new Date().getHours();
       let greeting = 'Chào bạn!';
       if (hour >= 5 && hour < 12) greeting = 'Chào buổi sáng!';
