@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-01",
+  "baseline": {
+    "B1": 791,
+    "B2": 1386,
+    "C1": 1302
+  },
+  "additions": {
+    "B1": 160,
+    "B2": 160
+  },
+  "correctedEntries": 140,
+  "repairedEntries": 829,
+  "glossEditedEntries": 512,
+  "semanticReviewedEntries": 1416,
+  "structurallyScreenedOriginalEntries": 3479,
+  "active": {
+    "B1": 951,
+    "B2": 1546,
+    "C1": 185
+  },
+  "removedC1": 1117,
+  "reviewed": 2682,
+  "reviewedByLevel": {
+    "B1": 951,
+    "B2": 1546,
+    "C1": 185
+  },
+  "unreviewed": 0,
+  "baselineStructuralIssues": [],
+  "semanticPending": [],
+  "pending": [],
+  "limitations": [
+    "Editorial review is not independent linguistic certification.",
+    "Removed C1 entries were structurally screened and excluded, not all semantically rewritten.",
+    "Supplemental levels are teaching targets estimated by the editor, not official lexical CEFR certification.",
+    "C1 core is an editorial selection, not a corpus frequency ranking.",
+    "Browser layout and physical audio playback have not been verified."
+  ],
+  "editsAgainstOriginal": {
+    "meaning": 1803,
+    "definition": 311,
+    "example": 1381,
+    "exampleTranslation": 1482,
+    "pos": 2,
+    "ipa": 2,
+    "collocations": 1185
+  }
+}

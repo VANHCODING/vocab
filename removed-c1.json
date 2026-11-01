@@ -1,0 +1,5587 @@
+[
+  {
+    "id": "ox-2180",
+    "word": "adhere",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2181",
+    "word": "administer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2182",
+    "word": "align",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2183",
+    "word": "allege",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2184",
+    "word": "allegedly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2186",
+    "word": "amend",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2187",
+    "word": "applaud",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2188",
+    "word": "appoint",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2189",
+    "word": "arguably",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2190",
+    "word": "arm",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2193",
+    "word": "assemble",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2195",
+    "word": "authorize",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2196",
+    "word": "await",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2197",
+    "word": "betray",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2198",
+    "word": "bind",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2199",
+    "word": "bleed",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2200",
+    "word": "bless",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2201",
+    "word": "boast",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2202",
+    "word": "bounce",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2203",
+    "word": "burst",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2204",
+    "word": "carve",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2205",
+    "word": "cater",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2206",
+    "word": "cease",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2207",
+    "word": "characterize",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2208",
+    "word": "circulate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2209",
+    "word": "cling",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2210",
+    "word": "coincide",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2212",
+    "word": "commence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2213",
+    "word": "compel",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2214",
+    "word": "compensate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2218",
+    "word": "compute",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2220",
+    "word": "conceive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2221",
+    "word": "confer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2222",
+    "word": "confine",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2224",
+    "word": "congratulate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2225",
+    "word": "conquer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2227",
+    "word": "consolidate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2230",
+    "word": "continually",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2231",
+    "word": "convict",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2234",
+    "word": "correlate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2236",
+    "word": "crawl",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2237",
+    "word": "creep",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2238",
+    "word": "crush",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2240",
+    "word": "deem",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2241",
+    "word": "defy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2242",
+    "word": "denounce",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2243",
+    "word": "depict",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2245",
+    "word": "deprive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2246",
+    "word": "descend",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2247",
+    "word": "designate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2248",
+    "word": "detain",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2250",
+    "word": "devastate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2251",
+    "word": "devise",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2253",
+    "word": "dictate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2254",
+    "word": "differentiate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2256",
+    "word": "dip",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2258",
+    "word": "discharge",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2260",
+    "word": "displace",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2263",
+    "word": "dissolve",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2264",
+    "word": "distort",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2266",
+    "word": "drain",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2267",
+    "word": "drift",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2268",
+    "word": "drown",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2269",
+    "word": "dub",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2270",
+    "word": "elevate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2271",
+    "word": "embark",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2272",
+    "word": "embed",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2273",
+    "word": "embody",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2275",
+    "word": "enact",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2279",
+    "word": "enforce",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2280",
+    "word": "enquire",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2282",
+    "word": "enrol",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2283",
+    "word": "ensue",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2284",
+    "word": "entitle",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2285",
+    "word": "erect",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2286",
+    "word": "escalate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2290",
+    "word": "exclusively",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2292",
+    "word": "exert",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2293",
+    "word": "expire",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2294",
+    "word": "explicitly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2296",
+    "word": "fade",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2297",
+    "word": "flee",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2299",
+    "word": "forge",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2300",
+    "word": "formulate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2301",
+    "word": "forth",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2302",
+    "word": "foster",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2303",
+    "word": "frankly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2304",
+    "word": "grind",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2305",
+    "word": "hail",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2306",
+    "word": "halfway",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2307",
+    "word": "haunt",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2308",
+    "word": "heighten",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2309",
+    "word": "imprison",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2311",
+    "word": "induce",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2312",
+    "word": "indulge",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2313",
+    "word": "infect",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2314",
+    "word": "inflict",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2315",
+    "word": "inhibit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2316",
+    "word": "initiate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2317",
+    "word": "inject",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2322",
+    "word": "intervene",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2323",
+    "word": "invoke",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2324",
+    "word": "ironically",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2325",
+    "word": "kidnap",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2326",
+    "word": "license",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2327",
+    "word": "linger",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2328",
+    "word": "loom",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2329",
+    "word": "manifest",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2332",
+    "word": "merely",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2335",
+    "word": "mobilize",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2337",
+    "word": "nod",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2338",
+    "word": "nominate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2341",
+    "word": "notify",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2342",
+    "word": "oblige",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2343",
+    "word": "obsess",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2345",
+    "word": "originate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2347",
+    "word": "overly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2349",
+    "word": "overturn",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2350",
+    "word": "overwhelm",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2351",
+    "word": "partially",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2352",
+    "word": "persist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2353",
+    "word": "plead",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2354",
+    "word": "plunge",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2355",
+    "word": "pop",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2356",
+    "word": "portray",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2358",
+    "word": "preach",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2360",
+    "word": "prescribe",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2361",
+    "word": "presently",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2362",
+    "word": "preside",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2364",
+    "word": "presume",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2365",
+    "word": "prevail",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2366",
+    "word": "proclaim",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2367",
+    "word": "provoke",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2368",
+    "word": "readily",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2370",
+    "word": "recount",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2371",
+    "word": "regain",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2373",
+    "word": "render",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2374",
+    "word": "renew",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2375",
+    "word": "reportedly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2376",
+    "word": "reproduce",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2378",
+    "word": "reside",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2379",
+    "word": "respectively",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2380",
+    "word": "resume",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2382",
+    "word": "revive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2383",
+    "word": "rip",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2384",
+    "word": "rock",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2385",
+    "word": "rotate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2386",
+    "word": "sack",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2387",
+    "word": "seemingly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2388",
+    "word": "seize",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2389",
+    "word": "seldom",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2390",
+    "word": "shatter",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2391",
+    "word": "shed",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2392",
+    "word": "shrink",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2393",
+    "word": "shrug",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2394",
+    "word": "simulate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2396",
+    "word": "skip",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2397",
+    "word": "slam",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2398",
+    "word": "slap",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2399",
+    "word": "slash",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2400",
+    "word": "smash",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2401",
+    "word": "snap",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2402",
+    "word": "soak",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2403",
+    "word": "soar",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2405",
+    "word": "spark",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2406",
+    "word": "squeeze",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2407",
+    "word": "stab",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2409",
+    "word": "steer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2410",
+    "word": "stir",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2411",
+    "word": "strive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2412",
+    "word": "stumble",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2413",
+    "word": "stun",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2415",
+    "word": "suck",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2416",
+    "word": "supervise",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2417",
+    "word": "supposedly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2418",
+    "word": "suppress",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2419",
+    "word": "surrender",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2421",
+    "word": "tempt",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2422",
+    "word": "terminate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2423",
+    "word": "testify",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2424",
+    "word": "thankfully",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2425",
+    "word": "thereafter",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2426",
+    "word": "thereby",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2427",
+    "word": "thrive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2428",
+    "word": "tighten",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2430",
+    "word": "top",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2431",
+    "word": "toss",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2434",
+    "word": "unify",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2435",
+    "word": "unveil",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2436",
+    "word": "uphold",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2438",
+    "word": "utterly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2439",
+    "word": "vanish",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2442",
+    "word": "vow",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2443",
+    "word": "weaken",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2444",
+    "word": "weave",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2445",
+    "word": "whatever",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2446",
+    "word": "whatsoever",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2447",
+    "word": "whereby",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2448",
+    "word": "whip",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2449",
+    "word": "wholly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2450",
+    "word": "widen",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2451",
+    "word": "wipe",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2452",
+    "word": "yell",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2453",
+    "word": "aluminium",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2454",
+    "word": "analogy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2455",
+    "word": "attribute",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2456",
+    "word": "configuration",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2457",
+    "word": "conversion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2458",
+    "word": "copper",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2459",
+    "word": "crystal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2460",
+    "word": "dimension",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2461",
+    "word": "entity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2462",
+    "word": "essence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2463",
+    "word": "flesh",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2464",
+    "word": "fluid",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2465",
+    "word": "grid",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2466",
+    "word": "hierarchy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2467",
+    "word": "injection",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2468",
+    "word": "miracle",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2469",
+    "word": "motive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2470",
+    "word": "nest",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2471",
+    "word": "scope",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2472",
+    "word": "simulation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2473",
+    "word": "spectrum",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2474",
+    "word": "stereotype",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2475",
+    "word": "texture",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2478",
+    "word": "academy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2480",
+    "word": "accomplishment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2481",
+    "word": "accordance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2483",
+    "word": "accumulation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2484",
+    "word": "accusation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2485",
+    "word": "accused",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2486",
+    "word": "acre",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2487",
+    "word": "activation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2488",
+    "word": "activist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2489",
+    "word": "adaptation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2491",
+    "word": "adolescent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2494",
+    "word": "aftermath",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2495",
+    "word": "aggression",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2496",
+    "word": "aide",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2497",
+    "word": "albeit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2498",
+    "word": "alignment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2499",
+    "word": "allegation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2501",
+    "word": "allowance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2502",
+    "word": "ally",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2503",
+    "word": "ambassador",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2504",
+    "word": "amendment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2505",
+    "word": "amid",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2506",
+    "word": "anchor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2507",
+    "word": "angel",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2508",
+    "word": "apparatus",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2509",
+    "word": "appetite",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2511",
+    "word": "archive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2512",
+    "word": "arena",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2513",
+    "word": "array",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2514",
+    "word": "ash",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2516",
+    "word": "assassination",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2517",
+    "word": "assault",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2518",
+    "word": "assembly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2519",
+    "word": "assertion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2520",
+    "word": "assurance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2521",
+    "word": "atrocity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2522",
+    "word": "attendance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2523",
+    "word": "attorney",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2525",
+    "word": "auto",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2527",
+    "word": "availability",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2528",
+    "word": "backdrop",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2529",
+    "word": "backing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2531",
+    "word": "bail",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2532",
+    "word": "ballot",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2533",
+    "word": "banner",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2534",
+    "word": "barrel",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2535",
+    "word": "bass",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2536",
+    "word": "battlefield",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2537",
+    "word": "bay",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2538",
+    "word": "beam",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2539",
+    "word": "beast",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2540",
+    "word": "behalf",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2541",
+    "word": "bench",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2543",
+    "word": "beneath",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2545",
+    "word": "biography",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2546",
+    "word": "bishop",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2547",
+    "word": "blade",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2548",
+    "word": "blend",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2549",
+    "word": "blessing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2551",
+    "word": "boom",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2553",
+    "word": "bow",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2554",
+    "word": "breach",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2555",
+    "word": "breakdown",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2557",
+    "word": "breed",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2560",
+    "word": "buck",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2561",
+    "word": "buddy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2562",
+    "word": "buffer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2563",
+    "word": "bulk",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2564",
+    "word": "burden",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2565",
+    "word": "burial",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2566",
+    "word": "cabinet",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2567",
+    "word": "calculation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2568",
+    "word": "canvas",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2570",
+    "word": "capitalism",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2571",
+    "word": "cargo",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2572",
+    "word": "carriage",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2573",
+    "word": "casino",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2574",
+    "word": "casualty",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2575",
+    "word": "catalogue",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2576",
+    "word": "cattle",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2577",
+    "word": "caution",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2578",
+    "word": "cemetery",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2579",
+    "word": "chamber",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2580",
+    "word": "chaos",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2581",
+    "word": "charm",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2582",
+    "word": "charter",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2583",
+    "word": "chunk",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2584",
+    "word": "citizenship",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2585",
+    "word": "clarity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2586",
+    "word": "clash",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2587",
+    "word": "classification",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2588",
+    "word": "closure",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2589",
+    "word": "cluster",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2590",
+    "word": "cocktail",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2591",
+    "word": "collaboration",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2592",
+    "word": "collision",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2593",
+    "word": "columnist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2594",
+    "word": "combat",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2595",
+    "word": "commentary",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2596",
+    "word": "commentator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2597",
+    "word": "commerce",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2598",
+    "word": "commissioner",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2599",
+    "word": "companion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2600",
+    "word": "compassion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2601",
+    "word": "compensation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2603",
+    "word": "complexity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2606",
+    "word": "composition",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2607",
+    "word": "compromise",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2608",
+    "word": "conception",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2609",
+    "word": "confession",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2610",
+    "word": "confirmation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2611",
+    "word": "confrontation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2612",
+    "word": "congregation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2613",
+    "word": "conscience",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2615",
+    "word": "consent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2617",
+    "word": "constituency",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2620",
+    "word": "contempt",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2621",
+    "word": "contender",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2622",
+    "word": "contention",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2623",
+    "word": "contractor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2625",
+    "word": "contributor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2626",
+    "word": "conviction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2628",
+    "word": "coordinator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2629",
+    "word": "cop",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2631",
+    "word": "correction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2632",
+    "word": "correlation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2633",
+    "word": "correspondence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2634",
+    "word": "correspondent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2635",
+    "word": "corruption",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2636",
+    "word": "councillor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2637",
+    "word": "counselling",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2638",
+    "word": "counsellor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2639",
+    "word": "counterpart",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2640",
+    "word": "coup",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2641",
+    "word": "courtesy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2642",
+    "word": "creator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2644",
+    "word": "crown",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2645",
+    "word": "curiosity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2646",
+    "word": "custody",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2647",
+    "word": "cutting",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2648",
+    "word": "dam",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2649",
+    "word": "dawn",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2650",
+    "word": "debris",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2651",
+    "word": "debut",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2652",
+    "word": "decision-making",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2653",
+    "word": "declaration",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2655",
+    "word": "deed",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2656",
+    "word": "default",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2658",
+    "word": "deficiency",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2659",
+    "word": "delegate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2660",
+    "word": "delegation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2661",
+    "word": "demon",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2662",
+    "word": "denial",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2663",
+    "word": "density",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2664",
+    "word": "dependence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2665",
+    "word": "deployment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2666",
+    "word": "deputy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2667",
+    "word": "descent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2669",
+    "word": "detection",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2670",
+    "word": "detention",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2671",
+    "word": "devil",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2672",
+    "word": "diagnosis",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2673",
+    "word": "dictator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2674",
+    "word": "dilemma",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2676",
+    "word": "disclosure",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2679",
+    "word": "disposal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2682",
+    "word": "distress",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2683",
+    "word": "doctrine",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2686",
+    "word": "dominance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2688",
+    "word": "dose",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2689",
+    "word": "duo",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2690",
+    "word": "earnings",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2691",
+    "word": "ease",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2692",
+    "word": "echo",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2693",
+    "word": "educator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2694",
+    "word": "effectiveness",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2696",
+    "word": "ego",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2698",
+    "word": "embassy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2699",
+    "word": "emergence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2700",
+    "word": "encouragement",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2701",
+    "word": "endeavour",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2703",
+    "word": "enforcement",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2704",
+    "word": "engagement",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2705",
+    "word": "enterprise",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2706",
+    "word": "enthusiast",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2707",
+    "word": "equation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2708",
+    "word": "excellence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2709",
+    "word": "exclusion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2710",
+    "word": "execution",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2711",
+    "word": "exile",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2712",
+    "word": "expenditure",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2713",
+    "word": "extremist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2714",
+    "word": "faculty",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2715",
+    "word": "fairness",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2716",
+    "word": "fate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2717",
+    "word": "feat",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2718",
+    "word": "fibre",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2719",
+    "word": "film-maker",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2720",
+    "word": "filter",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2721",
+    "word": "fine",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2722",
+    "word": "firearm",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2723",
+    "word": "fit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2724",
+    "word": "fixture",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2725",
+    "word": "flaw",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2726",
+    "word": "fleet",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2727",
+    "word": "flexibility",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2728",
+    "word": "footage",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2729",
+    "word": "foreigner",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2730",
+    "word": "formula",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2731",
+    "word": "franchise",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2732",
+    "word": "frustration",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2733",
+    "word": "fundraising",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2734",
+    "word": "funeral",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2735",
+    "word": "gallon",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2736",
+    "word": "gambling",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2737",
+    "word": "gathering",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2738",
+    "word": "gaze",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2739",
+    "word": "genocide",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2740",
+    "word": "glance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2741",
+    "word": "glimpse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2742",
+    "word": "glory",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2743",
+    "word": "grasp",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2744",
+    "word": "gravity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2745",
+    "word": "grief",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2746",
+    "word": "grin",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2747",
+    "word": "grip",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2748",
+    "word": "guerrilla",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2749",
+    "word": "guidance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2750",
+    "word": "guilt",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2751",
+    "word": "gut",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2752",
+    "word": "handful",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2753",
+    "word": "handling",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2754",
+    "word": "harassment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2755",
+    "word": "hardware",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2756",
+    "word": "harmony",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2757",
+    "word": "harvest",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2758",
+    "word": "hatred",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2759",
+    "word": "hazard",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2760",
+    "word": "hint",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2761",
+    "word": "homeland",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2762",
+    "word": "horizon",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2763",
+    "word": "horn",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2764",
+    "word": "hostage",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2765",
+    "word": "hostility",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2766",
+    "word": "humanity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2767",
+    "word": "hydrogen",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2768",
+    "word": "identification",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2769",
+    "word": "idiot",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2770",
+    "word": "ignorance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2771",
+    "word": "imagery",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2772",
+    "word": "implementation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2773",
+    "word": "imprisonment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2774",
+    "word": "inability",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2775",
+    "word": "incidence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2776",
+    "word": "inclusion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2777",
+    "word": "indicator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2778",
+    "word": "infant",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2779",
+    "word": "injustice",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2780",
+    "word": "insertion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2781",
+    "word": "insider",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2782",
+    "word": "inspection",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2783",
+    "word": "inspiration",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2784",
+    "word": "instinct",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2785",
+    "word": "insult",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2786",
+    "word": "intake",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2787",
+    "word": "integration",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2788",
+    "word": "intensity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2789",
+    "word": "intent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2790",
+    "word": "interface",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2791",
+    "word": "interference",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2792",
+    "word": "intervention",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2793",
+    "word": "investigator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2794",
+    "word": "involvement",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2795",
+    "word": "irony",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2796",
+    "word": "isolation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2797",
+    "word": "junction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2798",
+    "word": "justification",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2799",
+    "word": "kidney",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2800",
+    "word": "kingdom",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2801",
+    "word": "lad",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2802",
+    "word": "landlord",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2803",
+    "word": "landmark",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2804",
+    "word": "lap",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2805",
+    "word": "laser",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2806",
+    "word": "lawn",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2807",
+    "word": "layout",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2808",
+    "word": "leak",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2809",
+    "word": "leap",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2810",
+    "word": "legacy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2811",
+    "word": "legislature",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2812",
+    "word": "liberation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2813",
+    "word": "liberty",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2815",
+    "word": "limb",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2816",
+    "word": "line-up",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2817",
+    "word": "listing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2818",
+    "word": "literacy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2819",
+    "word": "liver",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2820",
+    "word": "lobby",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2821",
+    "word": "log",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2822",
+    "word": "loop",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2823",
+    "word": "loyalty",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2824",
+    "word": "machinery",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2825",
+    "word": "magistrate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2826",
+    "word": "magnitude",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2827",
+    "word": "mainland",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2828",
+    "word": "maintenance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2829",
+    "word": "mandate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2830",
+    "word": "manipulation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2831",
+    "word": "manuscript",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2832",
+    "word": "march",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2833",
+    "word": "marketplace",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2834",
+    "word": "mask",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2835",
+    "word": "massacre",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2836",
+    "word": "meantime",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2837",
+    "word": "meditation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2838",
+    "word": "melody",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2839",
+    "word": "memo",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2840",
+    "word": "memoir",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2841",
+    "word": "memorial",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2842",
+    "word": "mentor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2843",
+    "word": "merchant",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2844",
+    "word": "mercy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2845",
+    "word": "merit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2846",
+    "word": "midst",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2847",
+    "word": "militia",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2848",
+    "word": "mill",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2849",
+    "word": "mining",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2850",
+    "word": "ministry",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2851",
+    "word": "misery",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2852",
+    "word": "missile",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2853",
+    "word": "mobility",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2854",
+    "word": "modification",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2855",
+    "word": "momentum",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2856",
+    "word": "monk",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2857",
+    "word": "motorist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2858",
+    "word": "neglect",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2859",
+    "word": "newsletter",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2860",
+    "word": "niche",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2861",
+    "word": "nomination",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2862",
+    "word": "nominee",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2863",
+    "word": "nonsense",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2864",
+    "word": "noon",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2865",
+    "word": "nursery",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2866",
+    "word": "objection",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2867",
+    "word": "obsession",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2868",
+    "word": "occurrence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2869",
+    "word": "odds",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2870",
+    "word": "offering",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2871",
+    "word": "offspring",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2872",
+    "word": "optimism",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2873",
+    "word": "orientation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2874",
+    "word": "outbreak",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2875",
+    "word": "outing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2876",
+    "word": "outlet",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2877",
+    "word": "outlook",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2878",
+    "word": "outrage",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2879",
+    "word": "pad",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2880",
+    "word": "parameter",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2881",
+    "word": "parish",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2882",
+    "word": "passing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2883",
+    "word": "pastor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2884",
+    "word": "patch",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2885",
+    "word": "patent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2886",
+    "word": "pathway",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2887",
+    "word": "patrol",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2888",
+    "word": "patron",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2889",
+    "word": "peak",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2890",
+    "word": "peasant",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2891",
+    "word": "personnel",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2892",
+    "word": "petition",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2893",
+    "word": "physician",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2894",
+    "word": "pioneer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2895",
+    "word": "pipeline",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2896",
+    "word": "pirate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2897",
+    "word": "pit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2898",
+    "word": "plea",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2899",
+    "word": "pledge",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2900",
+    "word": "plug",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2901",
+    "word": "pole",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2902",
+    "word": "poll",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2903",
+    "word": "pond",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2904",
+    "word": "portfolio",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2905",
+    "word": "practitioner",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2906",
+    "word": "precedent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2907",
+    "word": "precision",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2908",
+    "word": "predator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2909",
+    "word": "predecessor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2910",
+    "word": "pregnancy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2911",
+    "word": "prejudice",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2912",
+    "word": "premium",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2913",
+    "word": "prescription",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2914",
+    "word": "preservation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2915",
+    "word": "presidency",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2916",
+    "word": "prevalence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2917",
+    "word": "prevention",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2918",
+    "word": "prey",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2919",
+    "word": "privatization",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2920",
+    "word": "privilege",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2921",
+    "word": "probe",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2922",
+    "word": "proceeds",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2923",
+    "word": "processing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2924",
+    "word": "processor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2926",
+    "word": "projection",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2927",
+    "word": "proposition",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2928",
+    "word": "prosecution",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2929",
+    "word": "prosecutor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2930",
+    "word": "prosperity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2931",
+    "word": "protocol",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2932",
+    "word": "province",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2933",
+    "word": "provision",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2934",
+    "word": "pulse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2935",
+    "word": "pump",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2936",
+    "word": "punch",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2937",
+    "word": "query",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2938",
+    "word": "quest",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2939",
+    "word": "quota",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2940",
+    "word": "rage",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2941",
+    "word": "raid",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2942",
+    "word": "rally",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2943",
+    "word": "rape",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2944",
+    "word": "ratio",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2945",
+    "word": "ray",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2946",
+    "word": "realization",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2947",
+    "word": "realm",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2948",
+    "word": "rebel",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2949",
+    "word": "rebellion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2950",
+    "word": "recipient",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2951",
+    "word": "reconstruction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2952",
+    "word": "referendum",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2953",
+    "word": "reflection",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2954",
+    "word": "reform",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2955",
+    "word": "refuge",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2956",
+    "word": "refusal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2957",
+    "word": "regulator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2958",
+    "word": "rehabilitation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2959",
+    "word": "reign",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2960",
+    "word": "rejection",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2963",
+    "word": "remainder",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2964",
+    "word": "remains",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2965",
+    "word": "remedy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2966",
+    "word": "reminder",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2967",
+    "word": "removal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2968",
+    "word": "rental",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2969",
+    "word": "replacement",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2970",
+    "word": "representation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2971",
+    "word": "reproduction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2972",
+    "word": "republic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2973",
+    "word": "residence",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2974",
+    "word": "residue",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2975",
+    "word": "resignation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2976",
+    "word": "resistance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2977",
+    "word": "restoration",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2978",
+    "word": "restraint",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2979",
+    "word": "revelation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2980",
+    "word": "revenge",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2981",
+    "word": "revival",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2982",
+    "word": "rifle",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2983",
+    "word": "riot",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2984",
+    "word": "ritual",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2985",
+    "word": "rod",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2986",
+    "word": "rotation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2987",
+    "word": "ruling",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2988",
+    "word": "rumour",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2989",
+    "word": "sacrifice",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2990",
+    "word": "saint",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2991",
+    "word": "sake",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2992",
+    "word": "say",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2993",
+    "word": "screw",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2994",
+    "word": "scrutiny",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2995",
+    "word": "seal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2996",
+    "word": "segment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2997",
+    "word": "senator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2998",
+    "word": "sensation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-2999",
+    "word": "sensitivity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3000",
+    "word": "sentiment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3001",
+    "word": "separation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3002",
+    "word": "set-up",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3003",
+    "word": "sexuality",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3004",
+    "word": "shareholder",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3005",
+    "word": "shipping",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3006",
+    "word": "shoot",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3007",
+    "word": "sigh",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3008",
+    "word": "sketch",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3009",
+    "word": "slavery",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3010",
+    "word": "slot",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3011",
+    "word": "solicitor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3012",
+    "word": "solidarity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3013",
+    "word": "spam",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3014",
+    "word": "span",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3015",
+    "word": "specification",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3016",
+    "word": "specimen",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3017",
+    "word": "spectacle",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3018",
+    "word": "spell",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3019",
+    "word": "sphere",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3020",
+    "word": "spine",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3021",
+    "word": "spotlight",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3022",
+    "word": "spouse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3023",
+    "word": "spy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3024",
+    "word": "squad",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3026",
+    "word": "stake",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3027",
+    "word": "stem",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3028",
+    "word": "stimulus",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3029",
+    "word": "storage",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3030",
+    "word": "strain",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3031",
+    "word": "strand",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3032",
+    "word": "strip",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3033",
+    "word": "submission",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3034",
+    "word": "subscriber",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3035",
+    "word": "subscription",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3036",
+    "word": "subsidy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3037",
+    "word": "substitute",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3038",
+    "word": "substitution",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3039",
+    "word": "succession",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3040",
+    "word": "successor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3041",
+    "word": "suicide",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3042",
+    "word": "suite",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3043",
+    "word": "supervision",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3044",
+    "word": "supervisor",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3045",
+    "word": "supplement",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3046",
+    "word": "surge",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3047",
+    "word": "surveillance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3048",
+    "word": "suspension",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3049",
+    "word": "suspicion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3050",
+    "word": "sword",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3051",
+    "word": "syndrome",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3052",
+    "word": "synthesis",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3053",
+    "word": "tackle",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3054",
+    "word": "taxpayer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3055",
+    "word": "tenant",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3056",
+    "word": "tenure",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3057",
+    "word": "terrain",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3058",
+    "word": "testimony",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3059",
+    "word": "theology",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3060",
+    "word": "thread",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3061",
+    "word": "threshold",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3062",
+    "word": "tide",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3063",
+    "word": "timber",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3064",
+    "word": "tobacco",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3065",
+    "word": "tolerance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3066",
+    "word": "toll",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3067",
+    "word": "torture",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3068",
+    "word": "trace",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3069",
+    "word": "trademark",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3070",
+    "word": "trail",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3071",
+    "word": "trailer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3072",
+    "word": "transaction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3073",
+    "word": "transcript",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3074",
+    "word": "transformation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3075",
+    "word": "transit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3076",
+    "word": "transmission",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3077",
+    "word": "trauma",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3078",
+    "word": "tribute",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3079",
+    "word": "trigger",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3080",
+    "word": "trio",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3081",
+    "word": "triumph",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3082",
+    "word": "trophy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3083",
+    "word": "trustee",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3084",
+    "word": "tuition",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3085",
+    "word": "turnout",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3086",
+    "word": "turnover",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3087",
+    "word": "twist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3088",
+    "word": "undergraduate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3089",
+    "word": "upgrade",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3090",
+    "word": "utility",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3091",
+    "word": "vacuum",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3092",
+    "word": "validity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3093",
+    "word": "vein",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3094",
+    "word": "venture",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3095",
+    "word": "verse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3096",
+    "word": "versus",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3097",
+    "word": "vessel",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3098",
+    "word": "veteran",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3099",
+    "word": "vice",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3100",
+    "word": "villager",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3101",
+    "word": "violation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3103",
+    "word": "ward",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3104",
+    "word": "warehouse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3105",
+    "word": "warfare",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3106",
+    "word": "warrant",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3107",
+    "word": "warrior",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3108",
+    "word": "weed",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3109",
+    "word": "well",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3110",
+    "word": "well-being",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3111",
+    "word": "whilst",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3112",
+    "word": "widow",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3113",
+    "word": "width",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3114",
+    "word": "willingness",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3115",
+    "word": "wit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3116",
+    "word": "withdrawal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3117",
+    "word": "workout",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3118",
+    "word": "worship",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3119",
+    "word": "yield",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3120",
+    "word": "youngster",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3121",
+    "word": "absent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3122",
+    "word": "accessible",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3123",
+    "word": "accountable",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3124",
+    "word": "acid",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3125",
+    "word": "acute",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3126",
+    "word": "adjacent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3127",
+    "word": "administrative",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3128",
+    "word": "adverse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3129",
+    "word": "aesthetic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3130",
+    "word": "alert",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3131",
+    "word": "alien",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3132",
+    "word": "alike",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3133",
+    "word": "amateur",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3134",
+    "word": "anonymous",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3135",
+    "word": "appealing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3136",
+    "word": "applicable",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3137",
+    "word": "arbitrary",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3138",
+    "word": "architectural",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3139",
+    "word": "authentic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3140",
+    "word": "bare",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3141",
+    "word": "beloved",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3142",
+    "word": "bizarre",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3143",
+    "word": "brutal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3144",
+    "word": "capitalist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3145",
+    "word": "cautious",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3146",
+    "word": "chronic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3147",
+    "word": "civic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3148",
+    "word": "civilian",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3149",
+    "word": "clinical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3150",
+    "word": "coastal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3151",
+    "word": "cognitive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3152",
+    "word": "collective",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3153",
+    "word": "colonial",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3154",
+    "word": "communist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3155",
+    "word": "comparable",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3158",
+    "word": "congressional",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3159",
+    "word": "consecutive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3160",
+    "word": "content",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3161",
+    "word": "contrary",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3162",
+    "word": "cooperative",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3163",
+    "word": "corresponding",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3164",
+    "word": "corrupt",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3165",
+    "word": "costly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3166",
+    "word": "countless",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3168",
+    "word": "crude",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3169",
+    "word": "cult",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3170",
+    "word": "cynical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3171",
+    "word": "damaging",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3172",
+    "word": "decisive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3174",
+    "word": "defensive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3175",
+    "word": "delicate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3176",
+    "word": "dense",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3177",
+    "word": "desirable",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3178",
+    "word": "destructive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3179",
+    "word": "disastrous",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3180",
+    "word": "distinctive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3181",
+    "word": "disturbing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3182",
+    "word": "divine",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3183",
+    "word": "driving",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3184",
+    "word": "dual",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3185",
+    "word": "dumb",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3186",
+    "word": "eager",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3187",
+    "word": "elaborate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3188",
+    "word": "electoral",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3190",
+    "word": "encouraging",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3191",
+    "word": "endless",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3192",
+    "word": "engaging",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3193",
+    "word": "eternal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3194",
+    "word": "evolutionary",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3196",
+    "word": "excess",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3197",
+    "word": "exclusive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3198",
+    "word": "experimental",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3199",
+    "word": "explicit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3200",
+    "word": "explosive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3201",
+    "word": "fatal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3202",
+    "word": "favourable",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3203",
+    "word": "feminist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3204",
+    "word": "fierce",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3205",
+    "word": "flawed",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3206",
+    "word": "forthcoming",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3207",
+    "word": "fragile",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3208",
+    "word": "frustrated",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3209",
+    "word": "frustrating",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3210",
+    "word": "functional",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3211",
+    "word": "generic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3212",
+    "word": "glorious",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3213",
+    "word": "grave",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3214",
+    "word": "gross",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3215",
+    "word": "handy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3216",
+    "word": "harsh",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3217",
+    "word": "high-profile",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3218",
+    "word": "hopeful",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3219",
+    "word": "humanitarian",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3220",
+    "word": "humble",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3221",
+    "word": "immense",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3222",
+    "word": "imminent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3223",
+    "word": "inadequate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3224",
+    "word": "inappropriate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3225",
+    "word": "inclined",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3226",
+    "word": "indigenous",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3227",
+    "word": "infamous",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3228",
+    "word": "influential",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3229",
+    "word": "inherent",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3230",
+    "word": "institutional",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3231",
+    "word": "instrumental",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3232",
+    "word": "insufficient",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3233",
+    "word": "intact",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3235",
+    "word": "integrated",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3237",
+    "word": "interactive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3238",
+    "word": "interim",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3239",
+    "word": "interior",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3240",
+    "word": "intermediate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3241",
+    "word": "intimate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3242",
+    "word": "intriguing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3243",
+    "word": "invisible",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3244",
+    "word": "ironic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3245",
+    "word": "irrelevant",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3246",
+    "word": "just",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3247",
+    "word": "large-scale",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3248",
+    "word": "latter",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3249",
+    "word": "legendary",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3250",
+    "word": "legislative",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3252",
+    "word": "lengthy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3253",
+    "word": "lesbian",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3254",
+    "word": "lesser",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3255",
+    "word": "lethal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3256",
+    "word": "liable",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3257",
+    "word": "liberal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3258",
+    "word": "lifelong",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3259",
+    "word": "linear",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3260",
+    "word": "long-standing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3261",
+    "word": "long-time",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3262",
+    "word": "magical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3263",
+    "word": "magnetic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3265",
+    "word": "mandatory",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3266",
+    "word": "marginal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3267",
+    "word": "marine",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3268",
+    "word": "mathematical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3269",
+    "word": "mature",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3271",
+    "word": "medieval",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3272",
+    "word": "mere",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3273",
+    "word": "militant",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3274",
+    "word": "minimal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3275",
+    "word": "minute",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3278",
+    "word": "municipal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3280",
+    "word": "nationwide",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3281",
+    "word": "naval",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3282",
+    "word": "neighbouring",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3283",
+    "word": "net",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3284",
+    "word": "noble",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3285",
+    "word": "non-profit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3287",
+    "word": "notorious",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3288",
+    "word": "novel",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3289",
+    "word": "occasional",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3290",
+    "word": "operational",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3291",
+    "word": "optical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3292",
+    "word": "oral",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3293",
+    "word": "organizational",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3295",
+    "word": "parental",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3296",
+    "word": "parliamentary",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3297",
+    "word": "partial",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3298",
+    "word": "passive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3299",
+    "word": "peculiar",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3301",
+    "word": "post-war",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3303",
+    "word": "premier",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3304",
+    "word": "presidential",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3306",
+    "word": "problematic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3311",
+    "word": "pronounced",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3313",
+    "word": "protective",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3314",
+    "word": "provincial",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3315",
+    "word": "radical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3317",
+    "word": "rear",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3318",
+    "word": "regulatory",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3319",
+    "word": "reluctant",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3321",
+    "word": "residential",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3322",
+    "word": "respective",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3323",
+    "word": "reverse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3324",
+    "word": "revolutionary",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3326",
+    "word": "sacred",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3327",
+    "word": "scattered",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3328",
+    "word": "selective",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3329",
+    "word": "serial",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3330",
+    "word": "sheer",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3331",
+    "word": "situated",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3332",
+    "word": "socialist",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3333",
+    "word": "sole",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3334",
+    "word": "solo",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3335",
+    "word": "sound",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3337",
+    "word": "standing",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3338",
+    "word": "stark",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3339",
+    "word": "statistical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3342",
+    "word": "striking",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3343",
+    "word": "structural",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3346",
+    "word": "suburban",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3347",
+    "word": "successive",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3348",
+    "word": "superb",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3349",
+    "word": "superior",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3351",
+    "word": "supreme",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3352",
+    "word": "surgical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3353",
+    "word": "suspicious",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3354",
+    "word": "symbolic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3356",
+    "word": "tender",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3357",
+    "word": "terminal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3358",
+    "word": "terrific",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3359",
+    "word": "theatrical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3360",
+    "word": "thought-provoking",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3361",
+    "word": "thoughtful",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3362",
+    "word": "thrilled",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3366",
+    "word": "tremendous",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3367",
+    "word": "tribal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3368",
+    "word": "troubled",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3372",
+    "word": "vague",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3373",
+    "word": "varied",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3374",
+    "word": "verbal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3377",
+    "word": "vicious",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3378",
+    "word": "vocal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3381",
+    "word": "worthy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3382",
+    "word": "abolish",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3384",
+    "word": "alliance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3385",
+    "word": "asylum",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3386",
+    "word": "bureaucracy",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3387",
+    "word": "coalition",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3388",
+    "word": "commodity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3389",
+    "word": "constitution",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3390",
+    "word": "constitutional",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3391",
+    "word": "deficit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3392",
+    "word": "diplomat",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3393",
+    "word": "diplomatic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3394",
+    "word": "governance",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3395",
+    "word": "judicial",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3396",
+    "word": "jurisdiction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3397",
+    "word": "legislation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3398",
+    "word": "merger",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3399",
+    "word": "monopoly",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3400",
+    "word": "prosecute",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3401",
+    "word": "sanction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3402",
+    "word": "sovereignty",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3403",
+    "word": "summit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3404",
+    "word": "surplus",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3405",
+    "word": "treaty",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3406",
+    "word": "tribunal",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3407",
+    "word": "verdict",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3408",
+    "word": "abortion",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3409",
+    "word": "absurd",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3410",
+    "word": "abuse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3411",
+    "word": "advocate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3413",
+    "word": "concede",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3414",
+    "word": "concession",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3415",
+    "word": "condemn",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3416",
+    "word": "consciousness",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3417",
+    "word": "contend",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3418",
+    "word": "dignity",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3419",
+    "word": "discourse",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3420",
+    "word": "dispute",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3421",
+    "word": "exploitation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3422",
+    "word": "hostile",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3423",
+    "word": "ideological",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3424",
+    "word": "ideology",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3425",
+    "word": "inmate",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3427",
+    "word": "lawsuit",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3429",
+    "word": "morality",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3430",
+    "word": "philosopher",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3431",
+    "word": "philosophical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3432",
+    "word": "premise",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3433",
+    "word": "proceeding",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3434",
+    "word": "propaganda",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3435",
+    "word": "psychiatric",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3437",
+    "word": "rhetoric",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3439",
+    "word": "secular",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3440",
+    "word": "settlement",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3441",
+    "word": "sin",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3442",
+    "word": "sue",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3444",
+    "word": "virtue",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3446",
+    "word": "agricultural",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3447",
+    "word": "critique",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3451",
+    "word": "regime",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3452",
+    "word": "tactic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3453",
+    "word": "tactical",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3456",
+    "word": "administrator",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3457",
+    "word": "admission",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3458",
+    "word": "blast",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3459",
+    "word": "circulation",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3460",
+    "word": "discrimination",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3461",
+    "word": "elite",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3462",
+    "word": "epidemic",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3465",
+    "word": "faction",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3466",
+    "word": "gear",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3467",
+    "word": "grace",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3468",
+    "word": "halt",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3470",
+    "word": "indictment",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3472",
+    "word": "migration",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3473",
+    "word": "mob",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3474",
+    "word": "outsider",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3475",
+    "word": "radar",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3476",
+    "word": "ranking",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3477",
+    "word": "retreat",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3478",
+    "word": "spin",
+    "reason": "outside-editorial-core"
+  },
+  {
+    "id": "ox-3479",
+    "word": "swing",
+    "reason": "outside-editorial-core"
+  }
+]

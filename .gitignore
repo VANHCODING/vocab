@@ -1,0 +1,14 @@
+# Local caches and dependencies
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+
+# Temporary build files
+*.curriculum.tmp
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
